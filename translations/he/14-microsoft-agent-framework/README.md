@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "19c4dab375acbc733855cc7f2f04edbc",
-  "translation_date": "2025-10-02T17:26:47+00:00",
-  "source_file": "14-microsoft-agent-framework/README.md",
-  "language_code": "he"
-}
--->
 # חקר Microsoft Agent Framework
 
-![Agent Framework](../../../translated_images/lesson-14-thumbnail.90df0065b9d234ee60be9ae59b754cb9c827569fcf52099caffc6f0e8e556bba.he.png)
+![Agent Framework](../../../translated_images/he/lesson-14-thumbnail.90df0065b9d234ee.webp)
 
 ### הקדמה
 
@@ -33,7 +24,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## הבנת Microsoft Agent Framework
 
-![Framework Intro](../../../translated_images/framework-intro.077af16617cf130c0f80f555dbb43cb1066503eaf5a9cc0aa9be67b47722dd52.he.png)
+![Framework Intro](../../../translated_images/he/framework-intro.077af16617cf130c.webp)
 
 [Microsoft Agent Framework (MAF)](https://aka.ms/ai-agents-beginners/agent-framewrok) מבוסס על הניסיון והלמידות מ-Semantic Kernel ו-AutoGen. הוא מציע גמישות להתמודדות עם מגוון רחב של מקרי שימוש סוכניים בסביבות ייצור ומחקר, כולל:
 
@@ -63,7 +54,7 @@ Microsoft Agent Framework מתמקד גם ביכולת פעולה הדדית ע�
 
 ### סוכנים
 
-![Agent Framework](../../../translated_images/agent-components.410a06daf87b4fefdce3760875b50526d01dd22a2ddd8a21e92da95beb82f84d.he.png)
+![Agent Framework](../../../translated_images/he/agent-components.410a06daf87b4fef.webp)
 
 **יצירת סוכנים**
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T10:57:22+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "ar"
-}
--->
 # مثال على خادم Github MCP
 
 ## الوصف
@@ -53,7 +44,7 @@ chainlit run app.py -w
 
 للاتصال بخادم Github MCP، اختر رمز "القابس" الموجود أسفل مربع الدردشة "اكتب رسالتك هنا..":
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.ar.png)
+![MCP Connect](../../../../../translated_images/ar/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 من هناك، يمكنك النقر على "Connect an MCP" لإضافة الأمر للاتصال بخادم Github MCP:
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-30T14:51:34+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "lt"
-}
--->
 # Github MCP Server Pavyzdys
 
 ## Aprašymas
@@ -53,7 +44,7 @@ Tai turėtų paleisti jūsų Chainlit serverį `localhost:8000` ir užpildyti j�
 
 Norėdami prisijungti prie Github MCP Serverio, pasirinkite „kištuko“ ikoną po „Įveskite savo žinutę čia..“ pokalbių laukeliu:
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.lt.png)
+![MCP Connect](../../../../../translated_images/lt/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 Iš ten galite spustelėti „Prisijungti prie MCP“, kad pridėtumėte komandą prisijungti prie Github MCP Serverio:
 

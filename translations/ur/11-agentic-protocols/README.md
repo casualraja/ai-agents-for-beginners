@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "aff92c6f019b4627ca9399c6e3882e17",
-  "translation_date": "2025-09-18T14:14:51+00:00",
-  "source_file": "11-agentic-protocols/README.md",
-  "language_code": "ur"
-}
--->
 # ایجنٹک پروٹوکولز (MCP، A2A اور NLWeb) کا استعمال
 
-[![ایجنٹک پروٹوکولز](../../../translated_images/lesson-11-thumbnail.b6c742949cf1ce2aa0255968d287b31c99b51dfa9c9beaede7c3fbed90e8fcfb.ur.png)](https://youtu.be/X-Dh9R3Opn8)
+[![ایجنٹک پروٹوکولز](../../../translated_images/ur/lesson-11-thumbnail.b6c742949cf1ce2a.webp)](https://youtu.be/X-Dh9R3Opn8)
 
 > _(اوپر دی گئی تصویر پر کلک کریں تاکہ اس سبق کی ویڈیو دیکھ سکیں)_
 
@@ -69,7 +60,7 @@ MCP AI ایجنٹس کے لیے اہم فوائد فراہم کرتا ہے:
 
 ### MCP کی مثال
 
-![MCP Diagram](../../../translated_images/mcp-diagram.e4ca1cbd551444a12e1f0eb300191a036ab01124fce71c864fe9cb7f4ac2a15d.ur.png)
+![MCP Diagram](../../../translated_images/ur/mcp-diagram.e4ca1cbd551444a1.webp)
 
 فرض کریں کہ ایک صارف AI اسسٹنٹ کے ذریعے فلائٹ بک کرنا چاہتا ہے جو MCP پر مبنی ہے۔
 
@@ -124,7 +115,7 @@ A2A ایجنٹس کے درمیان بات چیت کو ممکن بناتا ہے �
 
 ### A2A کی مثال
 
-![A2A Diagram](../../../translated_images/A2A-Diagram.8666928d648acc2687db4093d7b09ea2a595622f8fe18194a026ee55fc23af8e.ur.png)
+![A2A Diagram](../../../translated_images/ur/A2A-Diagram.8666928d648acc26.webp)
 
 آئیے ہمارے ٹریول بکنگ منظرنامے کو وسعت دیتے ہیں، لیکن اس بار A2A کا استعمال کرتے ہوئے۔
 
@@ -158,7 +149,7 @@ A2A ایجنٹس کے درمیان بات چیت کو ممکن بناتا ہے �
 
 ### NLWeb کی مثال
 
-![NLWeb](../../../translated_images/nlweb-diagram.c1e2390b310e5fe4b245b86690ac6c49c26e355da5ab124128c8675d58cc9b07.ur.png)
+![NLWeb](../../../translated_images/ur/nlweb-diagram.c1e2390b310e5fe4.webp)
 
 ہمارے ٹریول بکنگ ویب سائٹ کو دوبارہ دیکھیں، لیکن اس بار یہ NLWeb کے ذریعے چلائی جا رہی ہے۔
 

@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "5f0deef171fc3a68d5d3d770a8bfb03d",
-  "translation_date": "2025-08-29T09:41:53+00:00",
-  "source_file": "09-metacognition/README.md",
-  "language_code": "tl"
-}
--->
-[![Multi-Agent Design](../../../translated_images/lesson-9-thumbnail.38059e8af1a5b71d890c92f576f933c6a307c691339dca7e8ca6ea75a8d857a1.tl.png)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
+[![Multi-Agent Design](../../../translated_images/tl/lesson-9-thumbnail.38059e8af1a5b71d.webp)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
 
 > _(I-click ang larawan sa itaas upang mapanood ang video ng araling ito)_
 # Metakognisyon sa mga AI Agent
@@ -47,7 +38,7 @@ Pag-track kung paano o bakit ito pumili ng isang partikular na ruta.
 
 Ang metakognisyon ay may mahalagang papel sa disenyo ng mga AI agent para sa ilang mga dahilan:
 
-![Kahalagahan ng Metakognisyon](../../../translated_images/importance-of-metacognition.b381afe9aae352f7734c8628ea3f4b23084634b791c5a120c76a02bb7eeeb7ec.tl.png)
+![Kahalagahan ng Metakognisyon](../../../translated_images/tl/importance-of-metacognition.b381afe9aae352f7.webp)
 
 - Pagninilay sa Sarili: Ang mga agent ay maaaring suriin ang kanilang sariling pagganap at tukuyin ang mga lugar na kailangang pagbutihin.
 - Kakayahang Umangkop: Ang mga agent ay maaaring baguhin ang kanilang mga estratehiya batay sa mga nakaraang karanasan at nagbabagong kapaligiran.
@@ -251,7 +242,7 @@ travel_agent.adjust_based_on_feedback(feedback)
 
 Una, unawain natin ang pagkakaiba ng RAG Tool at Pre-emptive Context Load.
 
-![RAG vs Context Loading](../../../translated_images/rag-vs-context.9eae588520c00921f531e4dc788992e8a7b69b6ff7c9eaa69fb9bc83ad243504.tl.png)
+![RAG vs Context Loading](../../../translated_images/tl/rag-vs-context.9eae588520c00921.webp)
 
 ### Retrieval-Augmented Generation (RAG)
 

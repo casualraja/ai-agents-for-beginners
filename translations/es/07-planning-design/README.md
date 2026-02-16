@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "43069833a0412210ad5c3cc93d9c2146",
-  "translation_date": "2025-09-18T14:04:32+00:00",
-  "source_file": "07-planning-design/README.md",
-  "language_code": "es"
-}
--->
-[![Patrón de Diseño de Planificación](../../../translated_images/lesson-7-thumbnail.f7163ac557bea1236242cc86b178c3f1bbf5eb07b87f9cd7c256b366e32bcbb6.es.png)](https://youtu.be/kPfJ2BrBCMY?si=9pYpPXp0sSbK91Dr)
+[![Patrón de Diseño de Planificación](../../../translated_images/es/lesson-7-thumbnail.f7163ac557bea123.webp)](https://youtu.be/kPfJ2BrBCMY?si=9pYpPXp0sSbK91Dr)
 
 > _(Haz clic en la imagen de arriba para ver el video de esta lección)_
 
@@ -32,7 +23,7 @@ Después de completar esta lección, comprenderás:
 
 ## Definir el Objetivo General y Dividir una Tarea
 
-![Definir Objetivos y Tareas](../../../translated_images/defining-goals-tasks.d70439e19e37c47ac76c48b209a4eb515bea5b8a5207f6b2e7b5e597f09ccf6a.es.png)
+![Definir Objetivos y Tareas](../../../translated_images/es/defining-goals-tasks.d70439e19e37c47a.webp)
 
 La mayoría de las tareas del mundo real son demasiado complejas para abordarlas en un solo paso. Un agente de IA necesita un objetivo conciso para guiar su planificación y acciones. Por ejemplo, considera el objetivo:
 

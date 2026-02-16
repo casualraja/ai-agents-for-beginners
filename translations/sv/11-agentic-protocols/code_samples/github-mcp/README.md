@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T16:08:57+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "sv"
-}
--->
 # Github MCP Server Exempel
 
 ## Beskrivning
@@ -53,7 +44,7 @@ Detta bör starta din Chainlit-server på `localhost:8000` samt fylla din Azure 
 
 För att ansluta till Github MCP Server, välj "plug"-ikonen under chattfältet "Type your message here..":
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.sv.png)
+![MCP Connect](../../../../../translated_images/sv/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 Därifrån kan du klicka på "Connect an MCP" för att lägga till kommandot för att ansluta till Github MCP Server:
 

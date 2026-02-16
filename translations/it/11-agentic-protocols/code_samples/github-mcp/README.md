@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T13:30:49+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "it"
-}
--->
 # Esempio di Server MCP Github
 
 ## Descrizione
@@ -53,7 +44,7 @@ Questo dovrebbe avviare il server Chainlit su `localhost:8000` e popolare il tuo
 
 Per connettersi al Server MCP Github, seleziona l'icona a forma di "spina" sotto la casella di testo "Scrivi qui il tuo messaggio...":
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.it.png)
+![MCP Connect](../../../../../translated_images/it/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 Da lì, puoi cliccare su "Connect an MCP" per aggiungere il comando per connetterti al Server MCP Github:
 

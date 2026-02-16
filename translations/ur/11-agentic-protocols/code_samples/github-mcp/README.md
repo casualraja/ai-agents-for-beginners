@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T10:57:32+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "ur"
-}
--->
 # گِٹ ہب ایم سی پی سرور کی مثال
 
 ## تفصیل
@@ -53,7 +44,7 @@ chainlit run app.py -w
 
 گِٹ ہب ایم سی پی سرور سے جڑنے کے لیے، "Type your message here.." چیٹ باکس کے نیچے موجود "پلگ" آئیکن پر کلک کریں:
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.ur.png)
+![MCP Connect](../../../../../translated_images/ur/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 اس کے بعد، "Connect an MCP" پر کلک کریں تاکہ گِٹ ہب ایم سی پی سرور سے جڑنے کا کمانڈ شامل کیا جا سکے:
 

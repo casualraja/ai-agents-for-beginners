@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7e92870dc0843e13d4dabc620c09d2d9",
-  "translation_date": "2025-07-12T08:19:27+00:00",
-  "source_file": "02-explore-agentic-frameworks/azure-ai-foundry-agent-creation.md",
-  "language_code": "th"
-}
--->
 # การพัฒนา Azure AI Agent Service
 
 ในแบบฝึกหัดนี้ คุณจะใช้เครื่องมือ Azure AI Agent service ใน [Azure AI Foundry portal](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst) เพื่อสร้างเอเจนต์สำหรับการจองเที่ยวบิน เอเจนต์นี้จะสามารถโต้ตอบกับผู้ใช้และให้ข้อมูลเกี่ยวกับเที่ยวบินได้
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 1. ทำตามคำแนะนำจากโพสต์บล็อก [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst) สำหรับการสร้าง Azure AI Foundry hub
 2. เมื่อโปรเจกต์ของคุณถูกสร้างขึ้น ให้ปิดคำแนะนำใด ๆ ที่แสดงขึ้นมา และตรวจสอบหน้าของโปรเจกต์ใน Azure AI Foundry portal ซึ่งควรมีลักษณะคล้ายกับภาพต่อไปนี้:
 
-    ![Azure AI Foundry Project](../../../translated_images/azure-ai-foundry.88d0c35298348c2fca620668d9b567b50b18dfe94fd2251e0793a28d4d60854e.th.png)
+    ![Azure AI Foundry Project](../../../translated_images/th/azure-ai-foundry.88d0c35298348c2f.webp)
 
 ## การปรับใช้โมเดล
 
@@ -35,7 +26,7 @@ CO_OP_TRANSLATOR_METADATA:
 
     > **Note**: การลด TPM จะช่วยหลีกเลี่ยงการใช้โควต้ามากเกินไปในบัญชีที่คุณใช้งานอยู่
 
-    ![Model Deployed](../../../translated_images/model-deployment.3749c53fb81e18fdc2da5beb872441b4a5f86a2d1206c5a9999a4997f78e4b7a.th.png)
+    ![Model Deployed](../../../translated_images/th/model-deployment.3749c53fb81e18fd.webp)
 
 ## สร้างเอเจนต์
 
@@ -77,7 +68,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 > นอกจากนี้ คุณสามารถเพิ่ม **Knowledge Base** และ **Actions** เพื่อเพิ่มความสามารถของเอเจนต์ในการให้ข้อมูลและทำงานอัตโนมัติตามคำขอของผู้ใช้ สำหรับแบบฝึกหัดนี้ คุณสามารถข้ามขั้นตอนเหล่านี้ได้
 
-![Agent Setup](../../../translated_images/agent-setup.9bbb8755bf5df672c712a9aaed6482305d32a4986742e6b21faf59485f25c50a.th.png)
+![Agent Setup](../../../translated_images/th/agent-setup.9bbb8755bf5df672.webp)
 
 3. หากต้องการสร้างเอเจนต์ multi-AI ใหม่ ให้คลิก **New Agent** เอเจนต์ที่สร้างใหม่จะแสดงในหน้าของ Agents
 
@@ -90,7 +81,7 @@ CO_OP_TRANSLATOR_METADATA:
 
     > **Note**: เอเจนต์อาจไม่ให้คำตอบที่ถูกต้อง เนื่องจากไม่มีการใช้ข้อมูลเรียลไทม์ในแบบฝึกหัดนี้ จุดประสงค์คือเพื่อทดสอบความสามารถของเอเจนต์ในการเข้าใจและตอบคำถามตามคำสั่งที่ให้ไว้
 
-    ![Agent Playground](../../../translated_images/agent-playground.dc146586de71501011798b919ae595f4d4facf8c3a5f53e0107e7b80fc2418d1.th.png)
+    ![Agent Playground](../../../translated_images/th/agent-playground.dc146586de715010.webp)
 
 3. หลังจากทดสอบเอเจนต์แล้ว คุณสามารถปรับแต่งเพิ่มเติมโดยเพิ่ม intents, ข้อมูลฝึกสอน และ actions เพื่อเพิ่มความสามารถของเอเจนต์
 

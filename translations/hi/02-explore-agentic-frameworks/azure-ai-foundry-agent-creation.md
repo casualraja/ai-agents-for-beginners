@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7e92870dc0843e13d4dabc620c09d2d9",
-  "translation_date": "2025-07-12T08:17:10+00:00",
-  "source_file": "02-explore-agentic-frameworks/azure-ai-foundry-agent-creation.md",
-  "language_code": "hi"
-}
--->
 # Azure AI Agent Service Development
 
 इस अभ्यास में, आप [Azure AI Foundry portal](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst) में Azure AI Agent सेवा उपकरणों का उपयोग करके Flight Booking के लिए एक एजेंट बनाएंगे। यह एजेंट उपयोगकर्ताओं के साथ बातचीत कर सकेगा और उड़ानों के बारे में जानकारी प्रदान करेगा।
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 1. Azure AI Foundry हब बनाने के लिए [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst) ब्लॉग पोस्ट में दिए गए निर्देशों का पालन करें।
 2. जब आपका प्रोजेक्ट बन जाए, तो प्रदर्शित किसी भी टिप को बंद करें और Azure AI Foundry पोर्टल में प्रोजेक्ट पेज की समीक्षा करें, जो निम्नलिखित छवि जैसा दिखना चाहिए:
 
-    ![Azure AI Foundry Project](../../../translated_images/azure-ai-foundry.88d0c35298348c2fca620668d9b567b50b18dfe94fd2251e0793a28d4d60854e.hi.png)
+    ![Azure AI Foundry Project](../../../translated_images/hi/azure-ai-foundry.88d0c35298348c2f.webp)
 
 ## मॉडल तैनात करें
 
@@ -35,7 +26,7 @@ CO_OP_TRANSLATOR_METADATA:
 
     > [!NOTE] TPM कम करने से आपकी सदस्यता में उपलब्ध कोटा के अधिक उपयोग से बचा जा सकता है।
 
-    ![Model Deployed](../../../translated_images/model-deployment.3749c53fb81e18fdc2da5beb872441b4a5f86a2d1206c5a9999a4997f78e4b7a.hi.png)
+    ![Model Deployed](../../../translated_images/hi/model-deployment.3749c53fb81e18fd.webp)
 
 ## एजेंट बनाएं
 
@@ -77,7 +68,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 > इसके अलावा, आप एजेंट की क्षमताओं को बढ़ाने के लिए **Knowledge Base** और **Actions** जोड़ सकते हैं ताकि वह उपयोगकर्ता अनुरोधों के आधार पर अधिक जानकारी प्रदान कर सके और स्वचालित कार्य कर सके। इस अभ्यास के लिए, आप इन चरणों को छोड़ सकते हैं।
 
-![Agent Setup](../../../translated_images/agent-setup.9bbb8755bf5df672c712a9aaed6482305d32a4986742e6b21faf59485f25c50a.hi.png)
+![Agent Setup](../../../translated_images/hi/agent-setup.9bbb8755bf5df672.webp)
 
 3. नया मल्टी-AI एजेंट बनाने के लिए, बस **New Agent** पर क्लिक करें। नया बनाया गया एजेंट Agents पेज पर दिखेगा।
 
@@ -90,7 +81,7 @@ CO_OP_TRANSLATOR_METADATA:
 
     > [!NOTE] एजेंट सटीक उत्तर न दे सके क्योंकि इस अभ्यास में कोई वास्तविक समय डेटा उपयोग नहीं किया जा रहा है। उद्देश्य एजेंट की उपयोगकर्ता प्रश्नों को समझने और दिए गए निर्देशों के आधार पर प्रतिक्रिया देने की क्षमता का परीक्षण करना है।
 
-    ![Agent Playground](../../../translated_images/agent-playground.dc146586de71501011798b919ae595f4d4facf8c3a5f53e0107e7b80fc2418d1.hi.png)
+    ![Agent Playground](../../../translated_images/hi/agent-playground.dc146586de715010.webp)
 
 3. एजेंट का परीक्षण करने के बाद, आप इसे और अधिक intents, प्रशिक्षण डेटा, और actions जोड़कर उसकी क्षमताओं को बढ़ा सकते हैं।
 

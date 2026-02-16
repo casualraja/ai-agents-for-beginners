@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "aff92c6f019b4627ca9399c6e3882e17",
-  "translation_date": "2025-09-18T14:42:41+00:00",
-  "source_file": "11-agentic-protocols/README.md",
-  "language_code": "pa"
-}
--->
 # ਏਜੈਂਟਿਕ ਪ੍ਰੋਟੋਕੋਲ (MCP, A2A ਅਤੇ NLWeb) ਦੀ ਵਰਤੋਂ
 
-[![Agentic Protocols](../../../translated_images/lesson-11-thumbnail.b6c742949cf1ce2aa0255968d287b31c99b51dfa9c9beaede7c3fbed90e8fcfb.pa.png)](https://youtu.be/X-Dh9R3Opn8)
+[![Agentic Protocols](../../../translated_images/pa/lesson-11-thumbnail.b6c742949cf1ce2a.webp)](https://youtu.be/X-Dh9R3Opn8)
 
 > _(ਉਪਰ ਦਿੱਤੀ ਤਸਵੀਰ 'ਤੇ ਕਲਿਕ ਕਰਕੇ ਇਸ ਪਾਠ ਦਾ ਵੀਡੀਓ ਵੇਖੋ)_
 
@@ -69,7 +60,7 @@ MCP AI ਏਜੈਂਟਸ ਲਈ ਮਹੱਤਵਪੂਰਨ ਫਾਇਦੇ ਪ
 
 ### MCP ਉਦਾਹਰਨ
 
-![MCP Diagram](../../../translated_images/mcp-diagram.e4ca1cbd551444a12e1f0eb300191a036ab01124fce71c864fe9cb7f4ac2a15d.pa.png)
+![MCP Diagram](../../../translated_images/pa/mcp-diagram.e4ca1cbd551444a1.webp)
 
 ਕਲਪਨਾ ਕਰੋ ਕਿ ਇੱਕ ਯੂਜ਼ਰ MCP ਦੁਆਰਾ ਸੰਚਾਲਿਤ AI ਸਹਾਇਕ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਫਲਾਈਟ ਬੁੱਕ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹੈ।
 
@@ -124,7 +115,7 @@ A2A ਏਜੈਂਟਸ ਦੇ ਵਿਚਕਾਰ ਸੰਚਾਰ ਯੋਗ ਬ�
 
 ### A2A ਉਦਾਹਰਨ
 
-![A2A Diagram](../../../translated_images/A2A-Diagram.8666928d648acc2687db4093d7b09ea2a595622f8fe18194a026ee55fc23af8e.pa.png)
+![A2A Diagram](../../../translated_images/pa/A2A-Diagram.8666928d648acc26.webp)
 
 ਆਓ ਆਪਣੇ ਯਾਤਰਾ ਬੁਕਿੰਗ ਦ੍ਰਿਸ਼ ਨੂੰ ਵਧਾਉਣ, ਪਰ ਇਸ ਵਾਰ A2A ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ।
 

@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "43069833a0412210ad5c3cc93d9c2146",
-  "translation_date": "2025-09-18T15:52:18+00:00",
-  "source_file": "07-planning-design/README.md",
-  "language_code": "my"
-}
--->
-[![Planning Design Pattern](../../../translated_images/lesson-7-thumbnail.f7163ac557bea1236242cc86b178c3f1bbf5eb07b87f9cd7c256b366e32bcbb6.my.png)](https://youtu.be/kPfJ2BrBCMY?si=9pYpPXp0sSbK91Dr)
+[![Planning Design Pattern](../../../translated_images/my/lesson-7-thumbnail.f7163ac557bea123.webp)](https://youtu.be/kPfJ2BrBCMY?si=9pYpPXp0sSbK91Dr)
 
 > _(အထက်ပါပုံကိုနှိပ်ပြီး ဒီသင်ခန်းစာရဲ့ ဗီဒီယိုကို ကြည့်ပါ)_
 
@@ -32,7 +23,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## ရည်မှန်းချက်ကို သတ်မှတ်ခြင်းနှင့် အလုပ်ကို ခွဲခြားခြင်း
 
-![ရည်မှန်းချက်များနှင့် အလုပ်များကို သတ်မှတ်ခြင်း](../../../translated_images/defining-goals-tasks.d70439e19e37c47ac76c48b209a4eb515bea5b8a5207f6b2e7b5e597f09ccf6a.my.png)
+![ရည်မှန်းချက်များနှင့် အလုပ်များကို သတ်မှတ်ခြင်း](../../../translated_images/my/defining-goals-tasks.d70439e19e37c47a.webp)
 
 အများစုသော အမှန်တကယ်လုပ်ငန်းများသည် တစ်ဆင့်တည်းဖြင့် ဖြေရှင်းရန် အလွန်ရှုပ်ထွေးနေတတ်သည်။ AI agent တစ်ခုသည် ၎င်း၏ စီမံချက်နှင့် လုပ်ဆောင်မှုများကို လမ်းညွှန်ရန် ရှင်းလင်းသော ရည်မှန်းချက်တစ်ခုလိုအပ်သည်။ ဥပမာအားဖြင့်-
 

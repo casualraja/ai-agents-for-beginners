@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "5f0deef171fc3a68d5d3d770a8bfb03d",
-  "translation_date": "2025-08-29T20:47:35+00:00",
-  "source_file": "09-metacognition/README.md",
-  "language_code": "ro"
-}
--->
-[![Design Multi-Agent](../../../translated_images/lesson-9-thumbnail.38059e8af1a5b71d890c92f576f933c6a307c691339dca7e8ca6ea75a8d857a1.ro.png)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
+[![Design Multi-Agent](../../../translated_images/ro/lesson-9-thumbnail.38059e8af1a5b71d.webp)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
 
 > _(Faceți clic pe imaginea de mai sus pentru a viziona videoclipul acestei lecții)_
 # Metacogniția în Agenții AI
@@ -47,7 +38,7 @@ Urmărirea modului sau motivului pentru care a ales o anumită rută.
 
 Metacogniția joacă un rol crucial în designul agenților AI din mai multe motive:
 
-![Importanța Metacogniției](../../../translated_images/importance-of-metacognition.b381afe9aae352f7734c8628ea3f4b23084634b791c5a120c76a02bb7eeeb7ec.ro.png)
+![Importanța Metacogniției](../../../translated_images/ro/importance-of-metacognition.b381afe9aae352f7.webp)
 
 - Auto-reflecție: Agenții pot evalua propria performanță și identifica zonele care necesită îmbunătățiri.
 - Adaptabilitate: Agenții pot modifica strategiile pe baza experiențelor anterioare și a mediilor în schimbare.
@@ -251,7 +242,7 @@ travel_agent.adjust_based_on_feedback(feedback)
 
 Mai întâi, să începem prin a înțelege diferența dintre Instrumentul RAG și Încărcarea Contextului Preemptiv.
 
-![RAG vs Încărcarea Contextului](../../../translated_images/rag-vs-context.9eae588520c00921f531e4dc788992e8a7b69b6ff7c9eaa69fb9bc83ad243504.ro.png)
+![RAG vs Încărcarea Contextului](../../../translated_images/ro/rag-vs-context.9eae588520c00921.webp)
 
 ### Generare Augmentată prin Recuperare (RAG)
 

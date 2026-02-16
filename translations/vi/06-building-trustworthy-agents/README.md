@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "498802b4c3c3cc486b86f27a12cebb34",
-  "translation_date": "2025-08-29T17:50:52+00:00",
-  "source_file": "06-building-trustworthy-agents/README.md",
-  "language_code": "vi"
-}
--->
-[![Trustworthy AI Agents](../../../translated_images/lesson-6-thumbnail.a58ab36c099038d4f786c2b0d5d6e89f41f4c2ecc05ab10b67bced2695eeb218.vi.png)](https://youtu.be/iZKkMEGBCUQ?si=Q-kEbcyHUMPoHp8L)
+[![Trustworthy AI Agents](../../../translated_images/vi/lesson-6-thumbnail.a58ab36c099038d4.webp)](https://youtu.be/iZKkMEGBCUQ?si=Q-kEbcyHUMPoHp8L)
 
 > _(Nhấn vào hình ảnh trên để xem video của bài học này)_
 
@@ -41,7 +32,7 @@ Nếu bạn đã từng xây dựng một ứng dụng AI sử dụng các mô h
 
 Để tạo các thông điệp hệ thống có thể mở rộng, chúng ta có thể sử dụng một khung thông điệp hệ thống để xây dựng một hoặc nhiều tác nhân trong ứng dụng của mình:
 
-![Building a System Message Framework](../../../translated_images/system-message-framework.3a97368c92d11d6814577b03cd128ec8c71a5fd1e26f341835cfa5df59ae87ae.vi.png)
+![Building a System Message Framework](../../../translated_images/vi/system-message-framework.3a97368c92d11d68.webp)
 
 #### Bước 1: Tạo một thông điệp hệ thống meta
 
@@ -130,7 +121,7 @@ Giá trị của khung thông điệp hệ thống này là khả năng mở r�
 
 Để xây dựng các tác nhân AI đáng tin cậy, điều quan trọng là phải hiểu và giảm thiểu các rủi ro và mối đe dọa đối với tác nhân AI của bạn. Hãy cùng xem một số mối đe dọa khác nhau đối với các tác nhân AI và cách bạn có thể lập kế hoạch và chuẩn bị tốt hơn.
 
-![Understanding Threats](../../../translated_images/understanding-threats.89edeada8a97fc0f7053558567d5dd27c0c333b74e47fffdde490fa6777a4c17.vi.png)
+![Understanding Threats](../../../translated_images/vi/understanding-threats.89edeada8a97fc0f.webp)
 
 ### Nhiệm vụ và chỉ dẫn
 
@@ -166,7 +157,7 @@ Giá trị của khung thông điệp hệ thống này là khả năng mở r�
 
 Một cách hiệu quả khác để xây dựng các hệ thống tác nhân AI đáng tin cậy là sử dụng con người trong vòng lặp. Điều này tạo ra một luồng nơi người dùng có thể cung cấp phản hồi cho các tác nhân trong quá trình chạy. Người dùng về cơ bản đóng vai trò như các tác nhân trong một hệ thống đa tác nhân và bằng cách cung cấp sự chấp thuận hoặc chấm dứt quy trình đang chạy.
 
-![Human in The Loop](../../../translated_images/human-in-the-loop.5f0068a678f62f4fc8373d5b78c4c22f35d9e4da35c93f66c3b634c1774eff34.vi.png)
+![Human in The Loop](../../../translated_images/vi/human-in-the-loop.5f0068a678f62f4f.webp)
 
 Dưới đây là một đoạn mã sử dụng AutoGen để minh họa cách khái niệm này được triển khai:
 

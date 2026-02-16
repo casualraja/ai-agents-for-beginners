@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "5f0deef171fc3a68d5d3d770a8bfb03d",
-  "translation_date": "2025-08-30T13:42:37+00:00",
-  "source_file": "09-metacognition/README.md",
-  "language_code": "ko"
-}
--->
-[![Multi-Agent Design](../../../translated_images/lesson-9-thumbnail.38059e8af1a5b71d890c92f576f933c6a307c691339dca7e8ca6ea75a8d857a1.ko.png)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
+[![Multi-Agent Design](../../../translated_images/ko/lesson-9-thumbnail.38059e8af1a5b71d.webp)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
 
 > _(위 이미지를 클릭하면 이 강의의 동영상을 볼 수 있습니다)_
 # AI 에이전트의 메타인지
@@ -47,7 +38,7 @@ AI 에이전트의 메타인지에 대한 강의에 오신 것을 환영합니�
 
 메타인지는 여러 가지 이유로 AI 에이전트 설계에서 중요한 역할을 합니다:
 
-![메타인지의 중요성](../../../translated_images/importance-of-metacognition.b381afe9aae352f7734c8628ea3f4b23084634b791c5a120c76a02bb7eeeb7ec.ko.png)
+![메타인지의 중요성](../../../translated_images/ko/importance-of-metacognition.b381afe9aae352f7.webp)
 
 - 자기 성찰: 에이전트가 자신의 성과를 평가하고 개선이 필요한 영역을 식별할 수 있습니다.
 - 적응성: 에이전트가 과거 경험과 변화하는 환경에 따라 전략을 수정할 수 있습니다.
@@ -251,7 +242,7 @@ travel_agent.adjust_based_on_feedback(feedback)
 
 우선 RAG 도구와 사전 컨텍스트 로드의 차이를 이해해 봅시다.
 
-![RAG vs Context Loading](../../../translated_images/rag-vs-context.9eae588520c00921f531e4dc788992e8a7b69b6ff7c9eaa69fb9bc83ad243504.ko.png)
+![RAG vs Context Loading](../../../translated_images/ko/rag-vs-context.9eae588520c00921.webp)
 
 ### Retrieval-Augmented Generation (RAG)
 

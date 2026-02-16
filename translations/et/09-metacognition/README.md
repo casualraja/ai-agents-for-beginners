@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "5f0deef171fc3a68d5d3d770a8bfb03d",
-  "translation_date": "2025-10-11T11:02:40+00:00",
-  "source_file": "09-metacognition/README.md",
-  "language_code": "et"
-}
--->
-[![Multi-Agent Design](../../../translated_images/lesson-9-thumbnail.38059e8af1a5b71d890c92f576f933c6a307c691339dca7e8ca6ea75a8d857a1.et.png)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
+[![Multi-Agent Design](../../../translated_images/et/lesson-9-thumbnail.38059e8af1a5b71d.webp)](https://youtu.be/His9R6gw6Ec?si=3_RMb8VprNvdLRhX)
 
 > _(Klõpsa ülaloleval pildil, et vaadata selle õppetunni videot)_
 # Metakognitsioon tehisintellekti agentides
@@ -47,7 +38,7 @@ Jälgides, kuidas või miks ta valis teatud marsruudi.
 
 Metakognitsioon mängib tehisintellekti agentide disainis olulist rolli mitmel põhjusel:
 
-![Metakognitsiooni tähtsus](../../../translated_images/importance-of-metacognition.b381afe9aae352f7734c8628ea3f4b23084634b791c5a120c76a02bb7eeeb7ec.et.png)
+![Metakognitsiooni tähtsus](../../../translated_images/et/importance-of-metacognition.b381afe9aae352f7.webp)
 
 - Enesereflektsioon: Agendid suudavad hinnata oma jõudlust ja tuvastada parendamist vajavaid valdkondi.
 - Kohanemisvõime: Agendid suudavad kohandada oma strateegiaid varasemate kogemuste ja muutuvate keskkondade põhjal.
@@ -251,7 +242,7 @@ travel_agent.adjust_based_on_feedback(feedback)
 
 Kõigepealt alustame RAG-tööriista ja ennetava konteksti laadimise erinevuse mõistmisest.
 
-![RAG vs konteksti laadimine](../../../translated_images/rag-vs-context.9eae588520c00921f531e4dc788992e8a7b69b6ff7c9eaa69fb9bc83ad243504.et.png)
+![RAG vs konteksti laadimine](../../../translated_images/et/rag-vs-context.9eae588520c00921.webp)
 
 ### Retrieval-Augmented Generation (RAG)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T16:08:44+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "th"
-}
--->
 # ตัวอย่างเซิร์ฟเวอร์ Github MCP
 
 ## คำอธิบาย
@@ -54,7 +45,7 @@ chainlit run app.py -w
 
 เพื่อเชื่อมต่อกับ Github MCP Server ให้คลิกที่ไอคอน "ปลั๊ก" ใต้กล่องแชท "Type your message here..":
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.th.png)
+![MCP Connect](../../../../../translated_images/th/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 จากนั้นคลิก "Connect an MCP" เพื่อเพิ่มคำสั่งสำหรับเชื่อมต่อกับ Github MCP Server:
 

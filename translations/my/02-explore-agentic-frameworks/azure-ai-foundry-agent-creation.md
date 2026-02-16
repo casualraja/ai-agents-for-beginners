@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7e92870dc0843e13d4dabc620c09d2d9",
-  "translation_date": "2025-07-12T08:23:27+00:00",
-  "source_file": "02-explore-agentic-frameworks/azure-ai-foundry-agent-creation.md",
-  "language_code": "my"
-}
--->
 # Azure AI Agent Service Development
 
 ဒီလေ့ကျင့်ခန်းမှာတော့ [Azure AI Foundry portal](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst) ထဲက Azure AI Agent service tools တွေကို အသုံးပြုပြီး Flight Booking အတွက် agent တစ်ခု ဖန်တီးမှာဖြစ်ပါတယ်။ ဒီ agent က အသုံးပြုသူတွေနဲ့ ဆက်သွယ်ပြီး လေယာဉ်ခရီးစဉ်အကြောင်း အချက်အလက်တွေ ပေးနိုင်မှာ ဖြစ်ပါတယ်။
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 1. Azure AI Foundry hub ဖန်တီးဖို့အတွက် [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst) ဘလော့ဂ်ပို့စ်ထဲက လမ်းညွှန်ချက်တွေကို လိုက်နာပါ။
 2. သင့် project ဖန်တီးပြီးသွားရင် ပြသနေတဲ့ အကြံပြုချက်တွေကို ပိတ်ပြီး Azure AI Foundry portal ထဲက project စာမျက်နှာကို ပြန်လည်ကြည့်ရှုပါ၊ အောက်ပါပုံနှင့် ဆင်တူပါလိမ့်မယ်။
 
-    ![Azure AI Foundry Project](../../../translated_images/azure-ai-foundry.88d0c35298348c2fca620668d9b567b50b18dfe94fd2251e0793a28d4d60854e.my.png)
+    ![Azure AI Foundry Project](../../../translated_images/my/azure-ai-foundry.88d0c35298348c2f.webp)
 
 ## Deploy a model
 
@@ -35,7 +26,7 @@ CO_OP_TRANSLATOR_METADATA:
 
     > **Note**: TPM ကို လျော့ချခြင်းက သင့် subscription မှာ ရရှိနိုင်တဲ့ quota ကို မကျော်လွန်စေရန် ကူညီပေးပါတယ်။
 
-    ![Model Deployed](../../../translated_images/model-deployment.3749c53fb81e18fdc2da5beb872441b4a5f86a2d1206c5a9999a4997f78e4b7a.my.png)
+    ![Model Deployed](../../../translated_images/my/model-deployment.3749c53fb81e18fd.webp)
 
 ## Create an agent
 
@@ -77,7 +68,7 @@ Model တစ်ခု deploy လုပ်ပြီးသွားပြီဆိ
     
 > ထို့အပြင် **Knowledge Base** နဲ့ **Actions** တွေ ထည့်သွင်းပြီး agent ရဲ့ စွမ်းရည်တွေကို တိုးမြှင့်နိုင်ပါတယ်။ ဒီလေ့ကျင့်ခန်းအတွက်တော့ ဒီအဆင့်တွေကို ကျော်လွှားနိုင်ပါတယ်။
     
-![Agent Setup](../../../translated_images/agent-setup.9bbb8755bf5df672c712a9aaed6482305d32a4986742e6b21faf59485f25c50a.my.png)
+![Agent Setup](../../../translated_images/my/agent-setup.9bbb8755bf5df672.webp)
 
 3. Multi-AI agent အသစ်တစ်ခု ဖန်တီးချင်ရင် **New Agent** ကို နှိပ်ပါ။ ဖန်တီးပြီးတဲ့ agent ကို Agents စာမျက်နှာမှာ ပြသပါလိမ့်မယ်။
 
@@ -90,7 +81,7 @@ Agent ဖန်တီးပြီးသွားရင် Azure AI Foundry porta
 
     > **Note**: ဒီလေ့ကျင့်ခန်းမှာ အချိန်နဲ့တပြေးညီ ဒေတာ မသုံးထားလို့ agent ရဲ့ တုံ့ပြန်ချက်တွေ မှန်ကန်မှုနည်းနည်းရှိနိုင်ပါတယ်။ ရည်ရွယ်ချက်ကတော့ agent ရဲ့ အသုံးပြုသူမေးခွန်းတွေကို နားလည်ပြီး တုံ့ပြန်နိုင်မှုကို စမ်းသပ်ခြင်း ဖြစ်ပါတယ်။
 
-    ![Agent Playground](../../../translated_images/agent-playground.dc146586de71501011798b919ae595f4d4facf8c3a5f53e0107e7b80fc2418d1.my.png)
+    ![Agent Playground](../../../translated_images/my/agent-playground.dc146586de715010.webp)
 
 3. Agent ကို စမ်းသပ်ပြီးနောက်မှာ intents, training data, actions တွေ ပိုထည့်သွင်းပြီး စွမ်းရည်ပိုမိုတိုးမြှင့်နိုင်ပါတယ်။
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-10-11T11:29:07+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "ta"
-}
--->
 # Github MCP Server Example
 
 ## விளக்கம்
@@ -55,7 +46,7 @@ chainlit run app.py -w
 
 Github MCP Server ஐ இணைக்க, "Type your message here.." உரையாடல் பெட்டியின் கீழ் உள்ள "plug" ஐகானைத் தேர்ந்தெடுக்கவும்:
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.ta.png)
+![MCP Connect](../../../../../translated_images/ta/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 அதன் பின்னர், Github MCP Server ஐ இணைக்க கட்டளையைச் சேர்க்க "Connect an MCP" ஐ கிளிக் செய்யலாம்:
 

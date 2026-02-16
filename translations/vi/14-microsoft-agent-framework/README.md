@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "19c4dab375acbc733855cc7f2f04edbc",
-  "translation_date": "2025-10-02T17:27:22+00:00",
-  "source_file": "14-microsoft-agent-framework/README.md",
-  "language_code": "vi"
-}
--->
 # Khám phá Microsoft Agent Framework
 
-![Agent Framework](../../../translated_images/lesson-14-thumbnail.90df0065b9d234ee60be9ae59b754cb9c827569fcf52099caffc6f0e8e556bba.vi.png)
+![Agent Framework](../../../translated_images/vi/lesson-14-thumbnail.90df0065b9d234ee.webp)
 
 ### Giới thiệu
 
@@ -33,7 +24,7 @@ Mẫu mã cho [Microsoft Agent Framework (MAF)](https://aka.ms/ai-agents-beginne
 
 ## Hiểu Microsoft Agent Framework
 
-![Framework Intro](../../../translated_images/framework-intro.077af16617cf130c0f80f555dbb43cb1066503eaf5a9cc0aa9be67b47722dd52.vi.png)
+![Framework Intro](../../../translated_images/vi/framework-intro.077af16617cf130c.webp)
 
 [Microsoft Agent Framework (MAF)](https://aka.ms/ai-agents-beginners/agent-framewrok) được xây dựng dựa trên kinh nghiệm và bài học từ Semantic Kernel và AutoGen. Nó cung cấp sự linh hoạt để giải quyết nhiều trường hợp sử dụng agentic trong cả môi trường sản xuất và nghiên cứu, bao gồm:
 
@@ -63,7 +54,7 @@ Hãy cùng xem cách các tính năng này được áp dụng vào một số k
 
 ### Các Agent
 
-![Agent Framework](../../../translated_images/agent-components.410a06daf87b4fefdce3760875b50526d01dd22a2ddd8a21e92da95beb82f84d.vi.png)
+![Agent Framework](../../../translated_images/vi/agent-components.410a06daf87b4fef.webp)
 
 **Tạo Agent**
 

@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "498802b4c3c3cc486b86f27a12cebb34",
-  "translation_date": "2025-08-29T17:11:59+00:00",
-  "source_file": "06-building-trustworthy-agents/README.md",
-  "language_code": "fi"
-}
--->
-[![Luotettavat tekoälyagentit](../../../translated_images/lesson-6-thumbnail.a58ab36c099038d4f786c2b0d5d6e89f41f4c2ecc05ab10b67bced2695eeb218.fi.png)](https://youtu.be/iZKkMEGBCUQ?si=Q-kEbcyHUMPoHp8L)
+[![Luotettavat tekoälyagentit](../../../translated_images/fi/lesson-6-thumbnail.a58ab36c099038d4.webp)](https://youtu.be/iZKkMEGBCUQ?si=Q-kEbcyHUMPoHp8L)
 
 > _(Klikkaa yllä olevaa kuvaa katsoaksesi tämän oppitunnin videon)_
 
@@ -41,7 +32,7 @@ Tekoälyagenttien kohdalla järjestelmäkehotus on vielä tärkeämpi, koska age
 
 Jotta voimme luoda skaalautuvia järjestelmäkehotteita, voimme käyttää järjestelmäviestikehystä rakentaessamme yhtä tai useampaa agenttia sovellukseemme:
 
-![Järjestelmäviestikehyksen rakentaminen](../../../translated_images/system-message-framework.3a97368c92d11d6814577b03cd128ec8c71a5fd1e26f341835cfa5df59ae87ae.fi.png)
+![Järjestelmäviestikehyksen rakentaminen](../../../translated_images/fi/system-message-framework.3a97368c92d11d68.webp)
 
 #### Vaihe 1: Luo metajärjestelmäviesti
 
@@ -130,7 +121,7 @@ Tämän järjestelmäviestikehyksen arvo on siinä, että se helpottaa useiden a
 
 Luotettavien tekoälyagenttien rakentamiseksi on tärkeää ymmärtää ja vähentää tekoälyagenttiin kohdistuvia riskejä ja uhkia. Tarkastellaan joitakin erilaisia uhkia ja sitä, kuinka voit paremmin suunnitella ja valmistautua niihin.
 
-![Uhka-analyysi](../../../translated_images/understanding-threats.89edeada8a97fc0f7053558567d5dd27c0c333b74e47fffdde490fa6777a4c17.fi.png)
+![Uhka-analyysi](../../../translated_images/fi/understanding-threats.89edeada8a97fc0f.webp)
 
 ### Tehtävät ja ohjeet
 
@@ -166,7 +157,7 @@ Luotettavien tekoälyagenttien rakentamiseksi on tärkeää ymmärtää ja vähe
 
 Toinen tehokas tapa rakentaa luotettavia tekoälyagenttijärjestelmiä on käyttää ihmistä mukana prosessissa. Tämä luo työnkulun, jossa käyttäjät voivat antaa palautetta agenteille niiden suorittaessa tehtäviä. Käyttäjät toimivat käytännössä agenteina monen agentin järjestelmässä ja voivat hyväksyä tai keskeyttää käynnissä olevan prosessin.
 
-![Ihminen mukana prosessissa](../../../translated_images/human-in-the-loop.5f0068a678f62f4fc8373d5b78c4c22f35d9e4da35c93f66c3b634c1774eff34.fi.png)
+![Ihminen mukana prosessissa](../../../translated_images/fi/human-in-the-loop.5f0068a678f62f4f.webp)
 
 Tässä on koodiesimerkki AutoGenin avulla, joka näyttää, kuinka tämä konsepti toteutetaan:
 

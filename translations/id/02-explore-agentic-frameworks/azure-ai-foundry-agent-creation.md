@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7e92870dc0843e13d4dabc620c09d2d9",
-  "translation_date": "2025-07-12T08:21:00+00:00",
-  "source_file": "02-explore-agentic-frameworks/azure-ai-foundry-agent-creation.md",
-  "language_code": "id"
-}
--->
 # Pengembangan Layanan Azure AI Agent
 
 Dalam latihan ini, Anda akan menggunakan alat layanan Azure AI Agent di [portal Azure AI Foundry](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst) untuk membuat agen pemesanan penerbangan. Agen ini akan dapat berinteraksi dengan pengguna dan memberikan informasi tentang penerbangan.
@@ -25,7 +16,7 @@ Untuk menyelesaikan latihan ini, Anda memerlukan hal berikut:
 1. Ikuti panduan dari [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst) pada posting blog untuk membuat hub Azure AI Foundry.
 2. Setelah proyek Anda dibuat, tutup semua tips yang muncul dan tinjau halaman proyek di portal Azure AI Foundry, yang seharusnya terlihat seperti gambar berikut:
 
-    ![Azure AI Foundry Project](../../../translated_images/azure-ai-foundry.88d0c35298348c2fca620668d9b567b50b18dfe94fd2251e0793a28d4d60854e.id.png)
+    ![Azure AI Foundry Project](../../../translated_images/id/azure-ai-foundry.88d0c35298348c2f.webp)
 
 ## Men-deploy model
 
@@ -35,7 +26,7 @@ Untuk menyelesaikan latihan ini, Anda memerlukan hal berikut:
 
     > **Note**: Mengurangi TPM membantu menghindari penggunaan kuota yang berlebihan pada langganan yang Anda gunakan.
 
-    ![Model Deployed](../../../translated_images/model-deployment.3749c53fb81e18fdc2da5beb872441b4a5f86a2d1206c5a9999a4997f78e4b7a.id.png)
+    ![Model Deployed](../../../translated_images/id/model-deployment.3749c53fb81e18fd.webp)
 
 ## Membuat agen
 
@@ -77,7 +68,7 @@ Setelah Anda men-deploy model, Anda dapat membuat agen. Agen adalah model AI per
     
 > Selain itu, Anda dapat menambahkan **Knowledge Base** dan **Actions** untuk meningkatkan kemampuan agen dalam memberikan informasi lebih lengkap dan melakukan tugas otomatis berdasarkan permintaan pengguna. Untuk latihan ini, Anda dapat melewati langkah tersebut.
     
-![Agent Setup](../../../translated_images/agent-setup.9bbb8755bf5df672c712a9aaed6482305d32a4986742e6b21faf59485f25c50a.id.png)
+![Agent Setup](../../../translated_images/id/agent-setup.9bbb8755bf5df672.webp)
 
 3. Untuk membuat agen multi-AI baru, cukup klik **New Agent**. Agen yang baru dibuat akan ditampilkan di halaman Agents.
 
@@ -90,7 +81,7 @@ Setelah membuat agen, Anda dapat mengujinya untuk melihat bagaimana responsnya t
 
     > **Note**: Agen mungkin tidak memberikan jawaban yang akurat, karena tidak ada data waktu nyata yang digunakan dalam latihan ini. Tujuannya adalah untuk menguji kemampuan agen dalam memahami dan merespons pertanyaan pengguna berdasarkan instruksi yang diberikan.
 
-    ![Agent Playground](../../../translated_images/agent-playground.dc146586de71501011798b919ae595f4d4facf8c3a5f53e0107e7b80fc2418d1.id.png)
+    ![Agent Playground](../../../translated_images/id/agent-playground.dc146586de715010.webp)
 
 3. Setelah menguji agen, Anda dapat menyesuaikannya lebih lanjut dengan menambahkan lebih banyak intent, data pelatihan, dan actions untuk meningkatkan kemampuannya.
 

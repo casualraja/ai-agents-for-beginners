@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7e92870dc0843e13d4dabc620c09d2d9",
-  "translation_date": "2025-07-12T08:18:48+00:00",
-  "source_file": "02-explore-agentic-frameworks/azure-ai-foundry-agent-creation.md",
-  "language_code": "pl"
-}
--->
 # Azure AI Agent Service Development
 
 W tym ćwiczeniu użyjesz narzędzi usługi Azure AI Agent w [portalu Azure AI Foundry](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst), aby stworzyć agenta do rezerwacji lotów. Agent będzie mógł komunikować się z użytkownikami i udzielać informacji o lotach.
@@ -25,7 +16,7 @@ Aby ukończyć to ćwiczenie, potrzebujesz:
 1. Postępuj zgodnie z wytycznymi z wpisu na blogu [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst) dotyczącymi tworzenia huba Azure AI Foundry.
 2. Po utworzeniu projektu zamknij wszelkie wyświetlane wskazówki i przejrzyj stronę projektu w portalu Azure AI Foundry, która powinna wyglądać podobnie do poniższego obrazu:
 
-    ![Azure AI Foundry Project](../../../translated_images/azure-ai-foundry.88d0c35298348c2fca620668d9b567b50b18dfe94fd2251e0793a28d4d60854e.pl.png)
+    ![Azure AI Foundry Project](../../../translated_images/pl/azure-ai-foundry.88d0c35298348c2f.webp)
 
 ## Wdróż model
 
@@ -35,7 +26,7 @@ Aby ukończyć to ćwiczenie, potrzebujesz:
 
     > **Note**: Zmniejszenie TPM pomaga uniknąć nadmiernego wykorzystania dostępnego limitu w subskrypcji, której używasz.
 
-    ![Model Deployed](../../../translated_images/model-deployment.3749c53fb81e18fdc2da5beb872441b4a5f86a2d1206c5a9999a4997f78e4b7a.pl.png)
+    ![Model Deployed](../../../translated_images/pl/model-deployment.3749c53fb81e18fd.webp)
 
 ## Utwórz agenta
 
@@ -77,7 +68,7 @@ Teraz, gdy wdrożyłeś model, możesz stworzyć agenta. Agent to konwersacyjny 
     
 > Ponadto możesz dodać **Knowledge Base** i **Actions**, aby rozszerzyć możliwości agenta o dostarczanie dodatkowych informacji i wykonywanie zautomatyzowanych zadań na podstawie żądań użytkownika. W tym ćwiczeniu możesz pominąć te kroki.
     
-![Agent Setup](../../../translated_images/agent-setup.9bbb8755bf5df672c712a9aaed6482305d32a4986742e6b21faf59485f25c50a.pl.png)
+![Agent Setup](../../../translated_images/pl/agent-setup.9bbb8755bf5df672.webp)
 
 3. Aby utworzyć nowego agenta multi-AI, po prostu kliknij **New Agent**. Nowo utworzony agent pojawi się na stronie Agents.
 
@@ -90,7 +81,7 @@ Po utworzeniu agenta możesz go przetestować, aby zobaczyć, jak odpowiada na z
 
     > **Note**: Agent może nie udzielać dokładnych odpowiedzi, ponieważ w tym ćwiczeniu nie korzysta się z danych w czasie rzeczywistym. Celem jest przetestowanie zdolności agenta do rozumienia i odpowiadania na zapytania użytkowników na podstawie podanych instrukcji.
 
-    ![Agent Playground](../../../translated_images/agent-playground.dc146586de71501011798b919ae595f4d4facf8c3a5f53e0107e7b80fc2418d1.pl.png)
+    ![Agent Playground](../../../translated_images/pl/agent-playground.dc146586de715010.webp)
 
 3. Po przetestowaniu agenta możesz dalej go dostosowywać, dodając więcej intencji, danych treningowych i akcji, aby zwiększyć jego możliwości.
 

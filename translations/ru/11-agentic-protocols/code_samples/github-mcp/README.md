@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T13:30:18+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "ru"
-}
--->
 # Пример сервера Github MCP
 
 ## Описание
@@ -53,7 +44,7 @@ chainlit run app.py -w
 
 Чтобы подключиться к серверу Github MCP, выберите значок "вилка" под полем ввода сообщения "Type your message here..":
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.ru.png)
+![MCP Connect](../../../../../translated_images/ru/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 Затем нажмите "Connect an MCP", чтобы добавить команду для подключения к серверу Github MCP:
 

@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "cdfd0acc8592c1af14f8637833450375",
-  "translation_date": "2025-08-29T09:27:27+00:00",
-  "source_file": "10-ai-agents-production/README.md",
-  "language_code": "ur"
-}
--->
 # پروڈکشن میں AI ایجنٹس: مشاہدہ اور جانچ
 
-[![پروڈکشن میں AI ایجنٹس](../../../translated_images/lesson-10-thumbnail.2b79a30773db093e0b4fb47aaa618069e0afb4745fad4836526cf51df87f9ac9.ur.png)](https://youtu.be/l4TP6IyJxmQ?si=reGOyeqjxFevyDq9)
+[![پروڈکشن میں AI ایجنٹس](../../../translated_images/ur/lesson-10-thumbnail.2b79a30773db093e.webp)](https://youtu.be/l4TP6IyJxmQ?si=reGOyeqjxFevyDq9)
 
 جب AI ایجنٹس تجرباتی پروٹوٹائپس سے حقیقی دنیا کی ایپلیکیشنز میں منتقل ہوتے ہیں، تو ان کے رویے کو سمجھنے، ان کی کارکردگی کی نگرانی کرنے، اور ان کے نتائج کو منظم طریقے سے جانچنے کی صلاحیت اہم ہو جاتی ہے۔
 

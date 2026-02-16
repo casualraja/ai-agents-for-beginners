@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "cb7e50f471905ce6fdb92a30269a7a98",
-  "translation_date": "2025-09-04T10:04:47+00:00",
-  "source_file": "12-context-engineering/README.md",
-  "language_code": "tr"
-}
--->
 # AI Ajanları için Bağlam Mühendisliği
 
-[![Bağlam Mühendisliği](../../../translated_images/lesson-12-thumbnail.ed19c94463e774d43dfb7dacda2cd436740b2f84d61aa778849335dbca162dff.tr.png)](https://youtu.be/F5zqRV7gEag)
+[![Bağlam Mühendisliği](../../../translated_images/tr/lesson-12-thumbnail.ed19c94463e774d4.webp)](https://youtu.be/F5zqRV7gEag)
 
 > _(Bu dersin videosunu izlemek için yukarıdaki görsele tıklayın)_
 
@@ -49,7 +40,7 @@ AI ajanları için bağlam, bir AI ajanının belirli eylemleri planlamasını y
 
 ### Bağlam Türleri
 
-[![Bağlam Türleri](../../../translated_images/context-types.fc10b8927ee43f06c12a0238692eb2703063a01c544cd7981108ff97ba32fbde.tr.png)](https://youtu.be/F5zqRV7gEag)
+[![Bağlam Türleri](../../../translated_images/tr/context-types.fc10b8927ee43f06.webp)](https://youtu.be/F5zqRV7gEag)
 
 Bağlamın tek bir şey olmadığını unutmamak önemlidir. AI ajanının ihtiyaç duyduğu bilgi, çeşitli kaynaklardan gelebilir ve bu kaynaklara erişimi sağlamak bizim sorumluluğumuzdadır:
 
@@ -69,7 +60,7 @@ AI ajanının yönetmesi gereken bağlam türleri şunları içerebilir:
 
 ### Planlama Stratejileri
 
-[![Bağlam Mühendisliği En İyi Uygulamaları](../../../translated_images/best-practices.f4170873dc554f58e86de090732bfa260d20c0937b577254e70bedf49442fedf.tr.png)](https://youtu.be/F5zqRV7gEag)
+[![Bağlam Mühendisliği En İyi Uygulamaları](../../../translated_images/tr/best-practices.f4170873dc554f58.webp)](https://youtu.be/F5zqRV7gEag)
 
 İyi bağlam mühendisliği, iyi bir planlamayla başlar. İşte bağlam mühendisliği kavramını nasıl uygulayacağınızı düşünmeye başlamanıza yardımcı olacak bir yaklaşım:
 

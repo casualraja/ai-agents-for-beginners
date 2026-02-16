@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "19c4dab375acbc733855cc7f2f04edbc",
-  "translation_date": "2025-10-01T21:43:07+00:00",
-  "source_file": "14-microsoft-agent-framework/README.md",
-  "language_code": "fa"
-}
--->
 # بررسی چارچوب Microsoft Agent
 
-![Agent Framework](../../../translated_images/lesson-14-thumbnail.90df0065b9d234ee60be9ae59b754cb9c827569fcf52099caffc6f0e8e556bba.fa.png)
+![Agent Framework](../../../translated_images/fa/lesson-14-thumbnail.90df0065b9d234ee.webp)
 
 ### مقدمه
 
@@ -33,7 +24,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## آشنایی با چارچوب Microsoft Agent
 
-![Framework Intro](../../../translated_images/framework-intro.077af16617cf130c0f80f555dbb43cb1066503eaf5a9cc0aa9be67b47722dd52.fa.png)
+![Framework Intro](../../../translated_images/fa/framework-intro.077af16617cf130c.webp)
 
 [چارچوب Microsoft Agent (MAF)](https://aka.ms/ai-agents-beginners/agent-framewrok) بر اساس تجربیات و آموخته‌های Semantic Kernel و AutoGen ساخته شده است. این چارچوب انعطاف‌پذیری لازم برای پاسخگویی به انواع موارد استفاده عامل‌محور در محیط‌های تولید و تحقیقاتی را فراهم می‌کند، از جمله:
 
@@ -63,7 +54,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ### عوامل
 
-![Agent Framework](../../../translated_images/agent-components.410a06daf87b4fefdce3760875b50526d01dd22a2ddd8a21e92da95beb82f84d.fa.png)
+![Agent Framework](../../../translated_images/fa/agent-components.410a06daf87b4fef.webp)
 
 **ایجاد عوامل**
 

@@ -1,83 +1,79 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e056335d729ba6e49571db7a6533825d",
-  "translation_date": "2025-09-30T07:58:02+00:00",
-  "source_file": "04-tool-use/README.md",
-  "language_code": "my"
-}
--->
-[![How to Design Good AI Agents](../../../translated_images/lesson-4-thumbnail.546162853cb3daffd64edd92014f274103f76360dfb39fc6e6ee399494da38fd.my.png)](https://youtu.be/vieRiPRx-gI?si=cEZ8ApnT6Sus9rhn)
+[![How to Design Good AI Agents](../../../translated_images/my/lesson-4-thumbnail.546162853cb3daff.webp)](https://youtu.be/vieRiPRx-gI?si=cEZ8ApnT6Sus9rhn)
 
-> _(ဤသင်ခန်းစာ၏ ဗီဒီယိုကို ကြည့်ရန် အထက်ပါ ပုံကို နှိပ်ပါ)_
+> _(ဤသင်ခန်းစာ၏ ဗီဒီယိုကို ကြည့်ရန် အပေါ်ရှိ ပုံကို နှိပ်ပါ)_
 
-# Tool Use Design Pattern
+# ကိရိယာအသုံးပြုမှု ဒီဇိုင်းပုံစံ
 
-Tools သည် AI အေးဂျင့်များကို ပိုမိုကျယ်ပြန့်သော စွမ်းရည်များပေးနိုင်သောကြောင့် စိတ်ဝင်စားဖွယ်ဖြစ်သည်။ အေးဂျင့်သည် လုပ်ဆောင်နိုင်သော လုပ်ဆောင်ချက်များ အကန့်အသတ်ရှိခြင်းမရှိဘဲ tool တစ်ခု ထည့်သွင်းခြင်းဖြင့် အေးဂျင့်သည် လုပ်ဆောင်ချက်များစွာကို လုပ်ဆောင်နိုင်သည်။ ဤအခန်းတွင် AI အေးဂျင့်များသည် သူတို့ရည်မှန်းချက်များကို ရောက်ရှိရန် သတ်မှတ်ထားသော tools များကို ဘယ်လိုအသုံးပြုနိုင်သည်ကို ဖော်ပြထားသော Tool Use Design Pattern ကို လေ့လာပါမည်။
+ကိရိယာများသည် AI အေးဂျင့်များအား နေရာကျယ်လွန်းသော တတ်နိုင်မှုများ ပိုင်ဆိုင်စေသောကြောင့် စိတ်ဝင်စားစရာကောင်းသော်လည်း AI အေးဂျင့်တွင် ကန့်သတ်ထားသော လုပ်ဆောင်နိုင်မှုများရှိနေခြင်းအစား ကိရိယာတစ်ခု တိုးချဲ့ထည့်သွင်းခြင်းဖြင့် အေးဂျင့်သည် လုပ်ဆောင်နိုင်သော လုပ်ငန်းစဉ်များစွာကို ပြုလုပ်နိုင်သည်။ ယခုအခန်းတွင် AI အေးဂျင့်များသည် ၎င်းတို့၏ ရည်မှန်းချက်များကို တက်နိုင်ရန် ကိရိယာများကို မည်သို့ အသုံးပြုနိုင်ကြောင်း ဖော်ပြသော ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံကို ကြည့်မည်ဖြစ်သည်။
 
-## အကျဉ်းချုပ်
+## နိဒါန်း
 
-ဤသင်ခန်းစာတွင် ကျွန်ုပ်တို့သည် အောက်ပါမေးခွန်းများကို ဖြေရှင်းရန် ကြိုးစားပါမည်-
+ဤသင်ခန်းစာတွင် ကျွန်ုပ်တို့အဖြေရှာလိုသော မေးခွန်းများမှာ -
 
-- Tool Use Design Pattern ဆိုတာဘာလဲ?
-- ၎င်းကို အသုံးချနိုင်သော use cases များက ဘာတွေလဲ?
-- Design Pattern ကို အကောင်အထည်ဖော်ရန် လိုအပ်သော အစိတ်အပိုင်းများ/အခြေခံအဆောက်အအုံများက ဘာတွေလဲ?
-- ယုံကြည်စိတ်ချရသော AI အေးဂျင့်များကို တည်ဆောက်ရန် Tool Use Design Pattern ကို အသုံးပြုရာတွင် အထူးစဉ်းစားရန်အချက်များက ဘာတွေလဲ?
+- ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံ란 무엇입니까?
+- ၎င်းကို မည်သည့်အသုံးအများဆုံးဖြစ်စေသော သုံးစွဲမှုများအတွက် အသုံးပြုနိုင်ပါသလဲ?
+- ဒီဇိုင်းပုံစံအား လက်တွေ့ တည်ဆောက်ရန် လိုအပ်သော အစိတ်အပိုင်းများ/ဖွဲ့စည်းပုံများက ဘာတွေလဲ?
+- ယုံကြည်စိတ်ချရသော AI အေးဂျင့်များကို တည်ဆောက်ရာတွင် ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံကို အသုံးပြုရာရှိ အထူးစဉ်းစားရန် ချက်များက ဘာများလဲ?
 
 ## သင်ယူရမည့် ရည်မှန်းချက်များ
 
-ဤသင်ခန်းစာကို ပြီးမြောက်ပြီးနောက် သင်သည်-
+ဤသင်ခန်းစာပြီးနောက်၊ သင်သည် -
 
-- Tool Use Design Pattern နှင့် ၎င်း၏ ရည်ရွယ်ချက်ကို သတ်မှတ်နိုင်မည်။
-- Tool Use Design Pattern ကို အသုံးချနိုင်သော use cases များကို ဖော်ထုတ်နိုင်မည်။
-- Design Pattern ကို အကောင်အထည်ဖော်ရန် လိုအပ်သော အဓိကအစိတ်အပိုင်းများကို နားလည်နိုင်မည်။
-- Tool Use Design Pattern ကို အသုံးပြုသော AI အေးဂျင့်များတွင် ယုံကြည်စိတ်ချရမှုကို အာမခံရန် စဉ်းစားရန်အချက်များကို သိရှိနိုင်မည်။
+- ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံ၏ အဓိပ္ပါယ်နှင့် ရည်ရွယ်ချက်ကို သတ်မှတ်နိုင်မည်။
+- ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံကို အသုံးပြုနိုင်သည့် သုံးစွဲမှုလိုတ်စဉ်များကို မှတ်မိနိုင်မည်။
+- ဒီဇိုင်းပုံစံသာ ရေးဆွဲမှုတွင် လိုအပ်သော အဓိကအစိတ်အပိုင်းများကို နားလည်နိုင်မည်။
+- ဒီဇိုင်းပုံစံကို အသုံးပြုသည့် AI အေးဂျင့်များတွင် ယုံကြည်စိတ်ချနိုင်မှုအတွက် စဉ်းစားရမည့် ချက်များကို သိမြင်နိုင်မည်။
 
-## Tool Use Design Pattern ဆိုတာဘာလဲ?
+## ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံ란 무엇입니까?
 
-**Tool Use Design Pattern** သည် LLMs ကို အပြင်ပ tools များနှင့် အပြန်အလှန်ဆက်သွယ်နိုင်စွမ်းပေးခြင်းကို အဓိကထားသည်။ Tools ဆိုသည်မှာ အေးဂျင့်များက လုပ်ဆောင်ချက်များကို လုပ်ဆောင်ရန် အသုံးပြုနိုင်သော code ဖြစ်သည်။ Tool တစ်ခုသည် calculator ကဲ့သို့ ရိုးရှင်းသော function ဖြစ်နိုင်သလို၊ stock price lookup သို့မဟုတ် မိုးလေဝသခန့်မှန်းခြေကဲ့သို့ third-party service သို့ API call တစ်ခုလည်း ဖြစ်နိုင်သည်။ AI အေးဂျင့်များ၏ အနက်တွင် tools များကို **model-generated function calls** အဖြစ် အေးဂျင့်များက လုပ်ဆောင်ရန်အတွက် ဒီဇိုင်းထုတ်ထားသည်။
+**ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံ** သည် LLMs များအား နေရာရပြင်ပကိရိယာများနှင့် ဆက်သွယ်နိုင်စွမ်းပေးခြင်းဖြင့် သတ်မှတ်ထားသော ရည်ရွယ်ချက်များကို ရရှိစေခြင်းကို ဦးတည်သည်။ ကိရိယာများဆိုသည်မှာ အေးဂျင့်မှ လုပ်ဆောင်နိုင်သည့် ကုဒ်များဖြစ်ပြီး လုပ်ဆောင်ချက်များပြုလုပ်ရန် သုံးစွဲနိုင်သည်။ ကိရိယာတစ်ခုမှာ ကီလိုကန်ယူလေးတာကဲ့သို့သော ရိုးရိုး function တစ်ခုကို ဖြစ်နိုင်သလို စတော့ရှယ်ယာဈေးနှုန်းရှာဖွေရန် သို့မဟုတ် ရာသီဥတုခန့်မှန်းခြေကဲ့သို့သော တတိယပုဂ္ဂိုလ်ဝန်ဆောင်မှု API ဖုန်းခေါ်မှုတစ်ခုလည်း ဖြစ်နိုင်သည်။ AI အေးဂျင့်များအရ ပုံမှန်အားဖြင့် ကိရိယာများကို **မော်ဒယ်ပြုလုပ်သော function ခေါ်ဆိုမှုများ** အဖြစ် အေးဂျင့်များမှ အကောင်အထည်ပြုနိုင်သည်။
 
-## ၎င်းကို အသုံးချနိုင်သော use cases များက ဘာတွေလဲ?
+## ၎င်းကို မည်သည့်အသုံးပြုမှုများတွင် အသုံးပြုနိုင်ပါသလဲ?
 
-AI အေးဂျင့်များသည် tools များကို အသုံးပြု၍ ရှုပ်ထွေးသောအလုပ်များကို ပြီးမြောက်စေခြင်း၊ အချက်အလက်များကို ရှာဖွေခြင်း၊ သို့မဟုတ် ဆုံးဖြတ်ချက်များကို ချမှတ်ခြင်းတို့ကို လုပ်ဆောင်နိုင်သည်။ Tool Use Design Pattern ကို databases, web services, သို့မဟုတ် code interpreters ကဲ့သို့ အပြင်ပစနစ်များနှင့် dynamic interaction လိုအပ်သော အခြေအနေများတွင် မကြာခဏ အသုံးပြုသည်။ ၎င်း၏ စွမ်းရည်သည် အောက်ပါ use cases များအတွက် အသုံးဝင်သည်-
+AI အေးဂျင့်များသည် ကိရိယာများကို အသုံးပြု၍ ခက်ခဲခဲလုပ်ရက်သောလုပ်ငန်းများ ပြီးစီးနိုင်ရန်၊ သတင်းအချက်အလက် ရယူနိုင်ရန် သို့မဟုတ် ဆုံးဖြတ်ချက်များ ချနိုင်ရန် လိုအပ်ပါသည်။ ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံသည် ဒေတာဘေ့စ်များ၊ ဝက်ဘ်ဝန်ဆောင်မှုများ သို့မဟုတ် ကုဒ်ဖော်ပြသူများကဲ့သို့ ပြင်ပစနစ်များနှင့် လှုပ်ရှားမှုတိုးတက်စေသော အခြေအနေများတွင် မကြာခဏအသုံးပြုသည်။ ၎င်းစွမ်းရည်သည် အမျိုးမျိုးသော အသုံးပြုမှုများအတွက် အထောက်အကူဖြစ်ပါသည် -
 
-- **Dynamic Information Retrieval:** Agents များသည် SQLite database ကို query လုပ်၍ အချက်အလက်များကို ခွဲခြမ်းစိတ်ဖြာခြင်း၊ stock prices သို့မဟုတ် မိုးလေဝသအချက်အလက်များကို ရှာဖွေခြင်းကဲ့သို့ အပြင်ပ APIs သို့မဟုတ် databases ကို query လုပ်နိုင်သည်။
-- **Code Execution and Interpretation:** Agents များသည် code သို့မဟုတ် scripts များကို run လုပ်၍ သင်္ချာပြဿနာများကို ဖြေရှင်းခြင်း၊ အစီရင်ခံစာများကို ဖန်တီးခြင်း၊ သို့မဟုတ် simulation များကို လုပ်ဆောင်နိုင်သည်။
-- **Workflow Automation:** Task schedulers, email services, သို့မဟုတ် data pipelines ကဲ့သို့ tools များကို ပေါင်းစပ်၍ အလုပ်များကို အလိုအလျောက်လုပ်ဆောင်ခြင်း။
-- **Customer Support:** CRM systems, ticketing platforms, သို့မဟုတ် knowledge bases များနှင့် ဆက်သွယ်၍ အသုံးပြုသူမေးခွန်းများကို ဖြေရှင်းခြင်း။
-- **Content Generation and Editing:** Grammar checkers, text summarizers, သို့မဟုတ် content safety evaluators ကဲ့သို့ tools များကို အသုံးပြု၍ content ဖန်တီးမှုအလုပ်များကို ကူညီခြင်း။
+- **အဆင့်မြင့် သတင်းအချက်အလက် ရယူမှု:** အေးဂျင့်များသည် ပြင်ပ API များ သို့မဟုတ် ဒေတာဘေ့စ်များကို မှေးဖွင့်၍ အချိန်နှင့်တပြေးညီသော အချက်အလက်များ ရယူနိုင်သည် (ဥပမာ - SQLite ဒေတာဘေ့စ်ကို မေးမြန်း၍ ဒေတာစစ်ထုတ်ခြင်း၊ စတော့ဆိုင်ကယ် ဈေးထားများ သို့မဟုတ် ရာသီဥတု သတင်းအချက်အလက်များ ရရှိစေခြင်း)။
+- **ကုဒ်စစ်ဆေးခြင်းနှင့် ဖော်ထုတ်ခြင်း:** AI အေးဂျင့်များသည် ကုပြုလုပ်ရန်၊ အစီရင်ခံစာများထုတ်ရန် သို့မဟုတ် အတုအယောင်များ ပြုလုပ်ရန် ကုဒ်များ သို့မဟုတ် စကရစ်တ်များ ကို အကောင်အထည်ဖော်နိုင်သည်။
+- **လုပ်ငန်းစဉ် အလိုအလျောက်ပြုလုပ်ခြင်း:** ကိရိယာများကို တစ်ဆင့်စီ လိုက်ဖက်မှုများဖြင့် ပေးပြီး စဉ်ဆက်မပြတ် ပြုလုပ်ရသော လုပ်ငန်းစဉ်များ (ဥပမာ - တာဝန်ရက်ဇယားများ၊ အီးမေးလ် ဝန်ဆောင်မှုများ၊ ဒေတာလမ်းကြောင်းများ) ကို အလိုအလျောက်လုပ်ဆောင်ခြင်း။
+- **ဖောက်သည် ပံ့ပိုးမှု:** CRM စနစ်များ၊ တစ်ကတ်စနစ်များ သို့မဟုတ် သိပ္ပံဘက် အချက်အလက် အခြေစိုက် ဒေတာများနှင့် ဆက်သွယ်ကူညီ၍ အသုံးပြုသူ မေးခွန်းများ ရှင်းလင်းပေးခြင်း။
+- **အကြောင်းအရာ ဖန်တီးခြင်းနှင့် တည်းဖြတ်ခြင်း:** စာလုံးပေါင်းစစ်ဆေးခြင်း၊ အကျဉ်းချုပ်ရေးခြင်း သို့မဟုတ် အကြောင်းအရာ လုံခြုံရေးမှူချက် ထောက်ပံ့ အကူအညီ ပေးနိုင်သော ကိရိယာများကို အသုံးပြု၍ အကြောင်းအရာ ဖန်တီးမှုလုပ်ငန်းများကို ကူညီခြင်း။
 
-## Tool Use Design Pattern ကို အကောင်အထည်ဖော်ရန် လိုအပ်သော အစိတ်အပိုင်းများက ဘာတွေလဲ?
+## ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံကို လက်တွေ့ဆောင်ရွက်ရန် လိုအပ်သည့် အစိတ်အပိုင်းများ/ဖွဲ့စည်းပုံများ
 
-AI အေးဂျင့်များကို အလုပ်အမျိုးမျိုးကို လုပ်ဆောင်နိုင်စွမ်းပေးသော အစိတ်အပိုင်းများကို လိုအပ်သည်။ Tool Use Design Pattern ကို အကောင်အထည်ဖော်ရန် လိုအပ်သော အဓိကအစိတ်အပိုင်းများကို ကြည့်ကြပါစို့-
+ဤဖွဲ့စည်းပုံများသည် AI အေးဂျင့်ကို လုပ်ငန်းစဉ်များ များစွာ ဆောင်ရွက်နိုင်စေသည်။ ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံကို တည်ဆောက်ရန် လိုအပ်သော အဓိက အစိတ်အပိုင်းများအား ကြည့်ကြပါစို့ -
 
-- **Function/Tool Schemas**: အသုံးပြုနိုင်သော tools များ၏ အသေးစိတ်ဖော်ပြချက်များ၊ function name, ရည်ရွယ်ချက်, လိုအပ်သော parameters, နှင့် မျှော်မှန်းထားသော outputs အပါအဝင်။ ၎င်းတို့သည် LLM ကို tools များရရှိနိုင်မှုနှင့် valid requests များကို ဖန်တီးပုံကို နားလည်စေသည်။
-- **Function Execution Logic**: အသုံးပြုသူ၏ ရည်ရွယ်ချက်နှင့် စကားဝိုင်းအကြောင်းအရာအပေါ် မူတည်၍ tools များကို ဘယ်အချိန်တွင်၊ ဘယ်လို invoke လုပ်မည်ကို စီမံခန့်ခွဲသည်။
-- **Message Handling System**: အသုံးပြုသူ input, LLM response, tool calls, နှင့် tool outputs အကြား စကားဝိုင်းလှည့်ပတ်မှုကို စီမံခန့်ခွဲသော components များ။
-- **Tool Integration Framework**: ရိုးရှင်းသော functions များမှစ၍ ရှုပ်ထွေးသော အပြင်ပ services များအထိ အေးဂျင့်ကို tools များနှင့် ချိတ်ဆက်ပေးသော အဆောက်အအုံ။
-- **Error Handling & Validation**: Tool execution တွင် ဖြစ်ပေါ်သော အဆင်မပြေမှုများကို ကိုင်တွယ်ခြင်း၊ parameters များကို validate လုပ်ခြင်း၊ နှင့် မမျှော်လင့်ထားသော response များကို စီမံခန့်ခွဲခြင်း။
-- **State Management**: စကားဝိုင်းအကြောင်းအရာ, ယခင် tool interactions, နှင့် multi-turn interactions အတွင်းတွင် တိကျမှုရှိစေရန် အဆက်အသွယ်ရှိသော data များကို ထိန်းသိမ်းခြင်း။
+- **Function/Tool Schemas:** ရနိုင်သော ကိရိယာများ၏ အသေးစိတ် ဖော်ပြချက်များဖြစ်ပြီး function နာမည်၊ ရည်ရွယ်ချက်၊ လိုအပ်သော အမည်များနှင့် ထွက်ရှိရမည့် အချက်များကို ပေါင်းစပ်တည်ဆောက်ထားသည်။ ၎င်းများက LLM သို့ ကိရိယာရှိမှုနှင့် မှန်ကန်သော မေ့စ်ကိုတောင်းဆိုရန် နည်းလမ်းကို နားလည်စေသည်။
 
-အခုတော့ Function/Tool Calling ကို ပိုမိုအသေးစိတ်ကြည့်ကြပါစို့။
+- **Function Execution Logic:** အသုံးပြုသူ၏ ရည်မှန်းချက်နှင့် စကားပြောဆိုမှုအခြေအနေကို အခြေခံ၍ မည်ကိရိယာကို မည်သည့်အချိန်၌ခေါ်သုံးမည်ကို သတ်မှတ်သော စီမံကိန်းဖြစ်သည်။ ဤတွင် စီမံကိန်းဖန်တီးမှု မော်ဒူးများ၊ လမ်းညွှန်မှုစနစ်များ သို့မဟုတ် ကိရိယာအသုံးပြုမှုကို အလိုအလျောက် ရွေးချယ်သော အခြေအနေများ ပါဝင်နိုင်သည်။
+
+- **Message Handling System:** အသုံးပြုသူအထောက်အထား၊ LLM အဖြေများ၊ ကိရိယာခေါ်ဆိုမှုများနှင့် ကိရိယာထွက်ရှိမှုများကို စီမံခန့်ခွဲသော အစိတ်အပိုင်းများ။
+
+- **Tool Integration Framework:** လွယ်ကူစွာ ဆက်သွယ်သုံးစွဲနိုင်သော တည်ဆောက်ပုံခေါင်းစဉ်ဖြစ်၍ ရိုးရှင်းသော function များ ထဲမှ စတာမှ အတော်လေးရှုပ်တဲ့ နေရာရပြင်ပဝန်ဆောင်မှုများအထိ ချိတ်ဆက်ပေးသည်။
+
+- **Error Handling & Validation:** ကိရိယာဆောင်ရွက်မှု အပြစ်အနာဂတ်များကို ကိုင်တွယ်ရန်၊ အမည်ပိုင်းများကို စစ်ဆေးရန်နှင့် မမှန်ကန်သော တုံ့ပြန်ချက်များ ကို စီမံခန့်ခွဲရန် စနစ်များ။
+
+- **State Management:** စကားပြောဆိုမှုအခြေအနေ၊ ယခင်ကိရိယာဆက်ဆံမှုများနှင့် တာရှည်ထိန်းသိမ်းထားသော ဒေတာတို့ကို ခြေရာခံ၍ မျက်စောင်းအတန်းဆက်ဆံမှုများအတွင်း တည်ငြိမ်မှုရှိစေရန်။
+
+နောက်တစ်ဆင့် Function/Tool Calling ကို ပိုမိုအသေးစိတ် ကြည့်ကြမည်။
 
 ### Function/Tool Calling
 
-Function calling သည် Large Language Models (LLMs) များကို tools များနှင့် ဆက်သွယ်စေသော အဓိကနည်းလမ်းဖြစ်သည်။ 'Function' နှင့် 'Tool' ကို အပြန်အလှန်အသုံးပြုသောကြောင့် 'functions' (အသုံးပြုနိုင်သော code blocks) သည် အေးဂျင့်များအတွက် tasks များကို လုပ်ဆောင်ရန် အသုံးပြုသော 'tools' ဖြစ်သည်။ Function code ကို invoke လုပ်ရန်အတွက် LLM သည် အသုံးပြုသူ၏ တောင်းဆိုမှုကို function description နှင့် နှိုင်းယှဉ်ရမည်။ Function description များပါရှိသော schema ကို LLM သို့ ပေးပို့ပြီး LLM သည် task အတွက် အကောင်းဆုံး function ကို ရွေးချယ်ပြီး ၎င်း၏ name နှင့် arguments ကို ပြန်ပေးသည်။ ရွေးချယ်ထားသော function ကို invoke လုပ်ပြီး ၎င်း၏ response ကို LLM သို့ ပြန်ပေးပြီး အသုံးပြုသူ၏ တောင်းဆိုမှုကို ဖြေရှင်းရန် အသုံးပြုသည်။
+Function ခေါ်ဆိုခြင်းသည် LLMs များအား ကိရိယာများနှင့် ဆက်သွယ်နိုင်ရန် အဓိကနည်းလမ်းဖြစ်သည်။ 'Function' နှင့် 'Tool' ဆိုသော စကားများကို တူညီစွာ အသုံးပြုကြသည်မှာ 'function' များသည် ပြန်လည်အသုံးပြုနိုင်သော ကုဒ်အပိုင်းများဖြစ်ပြီး AI အေးဂျင့်များလုပ်ငန်းများ ပြုလုပ်ရန် အသုံးပြုသော 'tool' များ ဖြစ်ကြောင်းကြောင့်ဖြစ်သည်။ Function code ကို ခေါ်ဆိုပြီး လုပ်ဆောင်နိုင်ရန်အတွက် LLM သည် အသုံးပြုသူ၏ တောင်းဆိုချက်နှင့် function ဖော်ပြချက်ကို နှိုင်းယှဉ်ဖို့ လိုအပ်သည်။ ၎င်းအတွက် ရနိုင်သော function များအား ဖော်ပြထားသော schema တစ်ခုကို LLM သို့ ပို့သည်။ LLM သည် လက်ရှိလုပ်ငန်းအတွက် သင့်လျော်ဆုံး function ကို ရွေးချယ်ပြီး ၎င်း၏ နာမည်နှင့် ပါရာမီတာများကို ပြန်လည်ပေးပို့သည်။ ရွေးချယ်ထားသော function ကို ခေါ်ဆိုပြီး တုံ့ပြန်ချက်ကို LLM သို့ ပြန်ပို့သည်၊ ထိုအချက်အလက်များဖြင့် အသုံးပြုသူ၏ တောင်းဆိုချက်အား အဖြေပြုသည်။
 
-Function calling ကို အေးဂျင့်များအတွက် အကောင်အထည်ဖော်ရန် developer များအတွက် လိုအပ်သည်မှာ-
+developer များအတွက် function calling ကို အေးဂျင့်များအတွက် တည်ဆောက်ရန် -
 
-1. Function calling ကို support လုပ်သော LLM model
-2. Function descriptions ပါရှိသော schema
-3. ဖော်ပြထားသော function တစ်ခုချင်းစီ၏ code
+1. function calling ကို ပံ့ပိုးနိုင်သော LLM မော်ဒယ်တစ်ခု
+2. function ဖေါ်ပြချက်ပါရှိသည့် schema တစ်ခု
+3. ဖော်ပြထားသော function တစ်ခုချင်းစီအတွက် ကုဒ်
 
-San Francisco မြို့၏ လက်ရှိအချိန်ကို ရယူရန် ဥပမာကို အသုံးပြုကြည့်ပါစို့-
+မြို့တစ်မြို့ရှိ လက်ရှိအချိန်ရယူမည့် နမူနာကို အသုံးပြု၍ ဖော်ပြကြမည် -
 
-1. **Function calling ကို support လုပ်သော LLM ကို initialize လုပ်ပါ:**
+1. **function calling ကို ပံ့ပိုးသော LLM တစ်ခု ဖန်တီးပါ:**
 
-    Function calling ကို support မလုပ်သော models များလည်း ရှိနိုင်သဖြင့် သင်အသုံးပြုနေသော LLM ကို function calling ကို support လုပ်မလုပ် စစ်ဆေးရန် အရေးကြီးသည်။ <a href="https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling" target="_blank">Azure OpenAI</a> သည် function calling ကို support လုပ်သည်။ Azure OpenAI client ကို initiate လုပ်ခြင်းဖြင့် စတင်နိုင်သည်။
+    မော်ဒယ်အားလုံးမှာ function calling ပံ့ပိုးမှု မရှိနိုင်ပါ၊ သင့်အသုံးပြုလိုသော LLM တွင်ရှိသည်ကို စစ်ဆေးရမည်။ <a href="https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling" target="_blank">Azure OpenAI</a> သည် function calling ကို ပံ့ပိုးထားသည်။ Azure OpenAI client ကို စတင်ဖြင့် သုံးစတင်နိုင်သည်။
 
     ```python
-    # Initialize the Azure OpenAI client
+    # Azure OpenAI client ကို စတင်တည်ဆောက်ခြင်း
     client = AzureOpenAI(
         azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"), 
         api_key=os.getenv("AZURE_OPENAI_API_KEY"),  
@@ -87,10 +83,11 @@ San Francisco မြို့၏ လက်ရှိအချိန်ကို �
 
 1. **Function Schema တစ်ခု ဖန်တီးပါ:**
 
-    နောက်တစ်ဆင့်မှာ function name, function ၏ description, နှင့် function parameters ၏ name နှင့် description များပါရှိသော JSON schema ကို သတ်မှတ်ပါမည်။ ၎င်း schema ကို ယခင် client နှင့် users request (ဥပမာ- San Francisco ၏ အချိန်ကို ရှာဖွေခြင်း) နှင့်အတူ ပေးပို့ပါမည်။ အရေးကြီးသောအချက်မှာ **tool call** သည် ပြန်ပေးသည့်အဖြေဖြစ်ပြီး **မေးခွန်း၏ နောက်ဆုံးအဖြေ** မဟုတ်ပါ။ အထက်တွင် ဖော်ပြခဲ့သည့်အတိုင်း LLM သည် task အတွက် ရွေးချယ်ထားသော function name နှင့် ၎င်းကို pass လုပ်မည့် arguments ကို ပြန်ပေးသည်။
+    နောက်တစ်ဆင့်မှာ function နာမည်၊ function ၏ လုပ်ဆောင်ချက်ဖော်ပြချက်နှင့် ပါရာမီတာအမည်များနှင့် ဖော်ပြချက်များ ပါဝင်သည့် JSON schema တစ်ခု သတ်မှတ်မည်။ 
+    schema ကို ယခင် client သို့၊ အသုံးပြုသူ၏ San Francisco အချိန်ကို ရှာဖွေလိုသော တောင်းဆိုချက်နှင့်အတူ ပေးပို့မည်။ ပြန်လာသည်မှာ **tool call** ဖြစ်ပြီး မေးခွန်းအတွက် နောက်ဆုံးအဖြေ မဟုတ်ပါ။ LLM သည် ရွေးချယ်ထားသော function နာမည်နှင့် သွားမည့် arguments များကို ပြန်ပို့သည်။
 
     ```python
-    # Function description for the model to read
+    # မော်ဒယ်အတွက် ဖတ်ရန် လုပ်ဆောင်ချက် ဖော်ပြချက်
     tools = [
         {
             "type": "function",
@@ -114,10 +111,10 @@ San Francisco မြို့၏ လက်ရှိအချိန်ကို �
    
     ```python
   
-    # Initial user message
+    # အစပိုင်း အသုံးပြုသူ စာတမ်း
     messages = [{"role": "user", "content": "What's the current time in San Francisco"}] 
   
-    # First API call: Ask the model to use the function
+    # ပထမဆုံး API ခေါ်ယူမှု: မော်ဒယ်ကို ဖန်ရွက်မှုကို အသုံးပြုရန် မေးမြန်းပါ
       response = client.chat.completions.create(
           model=deployment_name,
           messages=messages,
@@ -125,7 +122,7 @@ San Francisco မြို့၏ လက်ရှိအချိန်ကို �
           tool_choice="auto",
       )
   
-      # Process the model's response
+      # မော်ဒယ်၏ တုံ့ပြန်ချက်ကို ပြုလုပ်ပါ
       response_message = response.choices[0].message
       messages.append(response_message)
   
@@ -140,9 +137,10 @@ San Francisco မြို့၏ လက်ရှိအချိန်ကို �
     ChatCompletionMessage(content=None, role='assistant', function_call=None, tool_calls=[ChatCompletionMessageToolCall(id='call_pOsKdUlqvdyttYB67MOj434b', function=Function(arguments='{"location":"San Francisco"}', name='get_current_time'), type='function')])
     ```
   
-1. **Task ကို လုပ်ဆောင်ရန် လိုအပ်သော function code:**
+1. **လုပ်ငန်းဆောင်ရွက်ရန် လိုအပ်သော function code:**
 
-    LLM သည် run လုပ်ရန်လိုအပ်သော function ကို ရွေးချယ်ပြီးနောက် task ကို လုပ်ဆောင်ရန် code ကို implement လုပ်ပြီး run လုပ်ရန်လိုအပ်သည်။ Python ကို အသုံးပြု၍ လက်ရှိအချိန်ကို ရယူရန် code ကို implement လုပ်နိုင်သည်။ response_message မှ function name နှင့် arguments ကို extract လုပ်ရန် code ကိုလည်း ရေးသားရန်လိုအပ်သည်။
+    LLM မှ function ကို ပြိုင်တင်ပြီးနောက်၊ လုပ်ငန်းဆောင်ရွက်သော ကုဒ် ကို အကောင်အထည်ဖော်ရန်လိုအပ်သည်။
+    Python ဖြင့် လက်ရှိအချိန် ရယူရန် ကုဒ်ရေးသားနိုင်ပြီး response_message မှ function နာမည်နှင့် arguments ကို ဆွဲထုတ်ရန်လည်း လိုအပ်မည်။
 
     ```python
       def get_current_time(location):
@@ -164,7 +162,7 @@ San Francisco မြို့၏ လက်ရှိအချိန်ကို �
     ```
 
      ```python
-     # Handle function calls
+     # ဖန်ရှင်ခေါ်ဆိုမှုများကို ကိုင်တွယ်ပါ
       if response_message.tool_calls:
           for tool_call in response_message.tool_calls:
               if tool_call.function.name == "get_current_time":
@@ -184,7 +182,7 @@ San Francisco မြို့၏ လက်ရှိအချိန်ကို �
       else:
           print("No tool calls were made by the model.")  
   
-      # Second API call: Get the final response from the model
+      # ဒုတိယ API ခေါ်ဆိုမှု: ပုံစံမှ နောက်ဆုံးတုံ့ပြန်ချက်ကို ရယူပါ
       final_response = client.chat.completions.create(
           model=deployment_name,
           messages=messages,
@@ -199,22 +197,22 @@ San Francisco မြို့၏ လက်ရှိအချိန်ကို �
       The current time in San Francisco is 09:24 AM.
      ```
 
-Function Calling သည် အေးဂျင့် tool use design အများစု၏ အဓိကဖြစ်သော်လည်း အခြေခံမှစ၍ ၎င်းကို အကောင်အထည်ဖော်ခြင်းသည် တစ်ခါတစ်ရံ အခက်အခဲဖြစ်နိုင်သည်။
-[Lesson 2](../../../02-explore-agentic-frameworks) တွင် သင်ယူခဲ့သည့်အတိုင်း agentic frameworks များသည် tool use ကို အကောင်အထည်ဖော်ရန် pre-built building blocks များကို ပေးသည်။
+Function Calling သည် အက်ဂျင့်ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံများ အများစု၊ သို့မဟုတ် အားလုံးတွင် အခြေခံဖြစ်သည်။ သို့သော် စတင်ရေးဆွဲခြင်းမှာ အခက်အခဲရှိနိုင်ပါသည်။
+[Lesson 2](../../../02-explore-agentic-frameworks) တွင် သင်ယူခဲ့သလို agentic framework များသည် ကိရိယာအသုံးပြုမှု အကောင်အထည်ဖော်ရန် အဆောက်အအုံများ မျှဝေပြုပေးကြသည်။
 
-## Agentic Frameworks များနှင့် Tool Use Examples
+## Agentic Framework များဖြင့် ကိရိယာအသုံးပြု နမူနာများ
 
-Agentic frameworks များကို အသုံးပြု၍ Tool Use Design Pattern ကို အကောင်အထည်ဖော်နိုင်သော ဥပမာများကို ကြည့်ပါစို့-
+အောက်ပါ agentic framework များကို အသုံးပြု၍ ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံ ကို မည်သို့လုပ်နိုင်သည်ကို အသုံးပြုပုံ နမူနာများ ဖြစ်ပါသည် -
 
 ### Semantic Kernel
 
-<a href="https://learn.microsoft.com/azure/ai-services/agents/overview" target="_blank">Semantic Kernel</a> သည် Large Language Models (LLMs) နှင့်အလုပ်လုပ်နေသော .NET, Python, နှင့် Java developer များအတွက် open-source AI framework ဖြစ်သည်။ ၎င်းသည် function calling ကို အသုံးပြုခြင်းလုပ်ငန်းစဉ်ကို function များနှင့် ၎င်းတို့၏ parameters ကို model သို့ အလိုအလျောက် ဖော်ပြပေးခြင်းဖြင့် လွယ်ကူစေသည်။ ၎င်းသည် model နှင့် သင့် code အကြား communication ကို handle လုပ်ပေးသည်။ Semantic Kernel ကဲ့သို့ agentic framework ကို အသုံးပြုခြင်း၏ အခြားတစ်ခု advantage ကတော့ <a href="https://github.com/microsoft/semantic-kernel/blob/main/python/samples/getting_started_with_agents/openai_assistant/step4_assistant_tool_file_search.py" target="_blank">File Search</a> နှင့် <a href="https://github.com/microsoft/semantic-kernel/blob/main/python/samples/getting_started_with_agents/openai_assistant/step3_assistant_tool_code_interpreter.py" target="_blank">Code Interpreter</a> ကဲ့သို့ pre-built tools များကို access လုပ်နိုင်ခြင်းဖြစ်သည်။
+<a href="https://learn.microsoft.com/azure/ai-services/agents/overview" target="_blank">Semantic Kernel</a> သည် .NET၊ Python နှင့် Java developer များအတွက် ဖွင့်လှစ်အရင်းအမြစ် AI Framework ဖြစ်ပြီး LLM များဖြင့် function calling ကို လွယ်ကူစွာ ပြုလုပ်နိုင်ရန် function များနှင့် ၎င်း၏ ပါရာမီတာများကို <a href="https://learn.microsoft.com/semantic-kernel/concepts/ai-services/chat-completion/function-calling/?pivots=programming-language-python#1-serializing-the-functions" target="_blank">serializing</a> ဖြင့် ကိုယ်စားပြုပေးသည်။ နှင့် model နှင့် ကုဒ်အကြား ပြန်လည်ဆက်သွယ်ဆောင်ရွက်မှုကို လည်း ကိုင်တွယ်ပေးသည်။ Semantic Kernel ကဲ့သို့ အေးဂျင့် framework အသုံးပြုခြင်း၏ အခြားအားသာချက်မှာ <a href="https://github.com/microsoft/semantic-kernel/blob/main/python/samples/getting_started_with_agents/openai_assistant/step4_assistant_tool_file_search.py" target="_blank">File Search</a> နှင့် <a href="https://github.com/microsoft/semantic-kernel/blob/main/python/samples/getting_started_with_agents/openai_assistant/step3_assistant_tool_code_interpreter.py" target="_blank">Code Interpreter</a> ကဲ့သို့ ရှိပြီးသားကိရိယာများကို လွယ်ကူစွာ အသုံးပြုနိုင်ခြင်း ဖြစ်ပါသည်။
 
-အောက်ပါ diagram သည် Semantic Kernel နှင့် function calling လုပ်ငန်းစဉ်ကို ဖော်ပြသည်-
+Semantic Kernel ဖြင့် function calling နေရာရပြင် ပုံစံကို အောက်ပါပုံက ဖော်ပြပါသည် -
 
-![function calling](../../../translated_images/functioncalling-diagram.a84006fc287f60140cc0a484ff399acd25f69553ea05186981ac4d5155f9c2f6.my.png)
+![function calling](../../../translated_images/my/functioncalling-diagram.a84006fc287f6014.webp)
 
-Semantic Kernel တွင် functions/tools များကို <a href="https://learn.microsoft.com/semantic-kernel/concepts/plugins/?pivots=programming-language-python" target="_blank">Plugins</a> ဟုခေါ်သည်။ ယခင် `get_current_time` function ကို class အဖြစ် ပြောင်းလဲပြီး plugin အဖြစ် အသုံးပြုနိုင်သည်။ `kernel_function` decorator ကို import လုပ်ပြီး function ၏ description ကို ထည့်သွင်းနိုင်သည်။ GetCurrentTimePlugin ဖြင့် kernel တစ်ခုကို ဖန်တီးသောအခါ kernel သည် function နှင့် ၎င်း၏ parameters ကို အလိုအလျောက် serialize လုပ်ပြီး schema ကို ဖန်တီးကာ LLM သို့ ပေးပို့သည်။
+Semantic Kernel တွင် function/ကိရိယာများကို <a href="https://learn.microsoft.com/semantic-kernel/concepts/plugins/?pivots=programming-language-python" target="_blank">Plugins</a> ဟု ခေါ်သည်။ ယခင်တွင် မြင်ခဲ့သော `get_current_time` function ကို class အဖြစ် ပြောင်းပြီး plugin တစ်ခုအဖြစ် ပြုလုပ်နိုင်သည်။ `kernel_function` decorator ကို မူကြမ်းအနေဖြင့် ထည့်သွင်းနိုင်ပြီး function ရဲ့ ဖော်ပြချက်ကိုလည်း ထည့်သွင်းသည်။ GetCurrentTimePlugin ဖြင့် kernel ကို ဖန်တီးပါက kernel သည် function နှင့် ပါရာမီတာများကို လက်ဖြင့် serializing ပြုလုပ်ပြီး LLM ပို့ရန် schema ဖန်တီးသည်။
 
 ```python
 from semantic_kernel.functions import kernel_function
@@ -234,44 +232,93 @@ class GetCurrentTimePlugin:
 ```python 
 from semantic_kernel import Kernel
 
-# Create the kernel
+# ကန့်ကွက်ကို ဖန်တီးပါ
 kernel = Kernel()
 
-# Create the plugin
+# ပလပ်ဂ်အင်ကို ဖန်တီးပါ
 get_current_time_plugin = GetCurrentTimePlugin(location)
 
-# Add the plugin to the kernel
+# ပလပ်ဂ်အင်ကို ကန့်ကွက်ထဲ ထည့်ပါ
 kernel.add_plugin(get_current_time_plugin)
 ```
   
 ### Azure AI Agent Service
 
-<a href="https://learn.microsoft.com/azure/ai-services/agents/overview" target="_blank">Azure AI Agent Service</a> သည် developer များကို compute နှင့် storage resources ကို စီမံခန့်ခွဲရန် မလိုအပ်ဘဲ ယုံကြည်စိတ်ချရသော extensible AI agents များကို securely build, deploy, နှင့် scale လုပ်ရန် အခွင့်အလမ်းပေးသော agentic framework အသစ်ဖြစ်သည်။ ၎င်းသည် enterprise grade security ရှိသော fully managed service ဖြစ်သောကြောင့် enterprise applications များအတွက် အထူးအသုံးဝင်သည်။
+<a href="https://learn.microsoft.com/azure/ai-services/agents/overview" target="_blank">Azure AI Agent Service</a> သည် နောက်ဆုံးပေါ် Agentic Framework ဖြစ်ပြီး အောက်ခံ တို့ကို ကိုင်တွယ်စီမံရန်မလိုဘဲ developer များအား လုံခြုံစိတ်ချရသော၊ အသုံးပြုရလွယ်ကူပြီး တိုးချဲ့နိုင်သော AI အေးဂျင့်များ ဖန်တီး၊ ထုတ်လွှင့်နှင့် ချဲ့ထွင်နိုင်ရန် ရည်ရွယ်ထားသည်။ အထူးသဖြင့် လုပ်ငန်းအသုံးပြုမှုများအတွက် အသုံးဝင်ပြီး တစ်လုံးတည်း အစီအစဉ်ဆောင်ရွက်ခြင်းအားဖြင့် လုံခြုံရေးအဆင့်မြင့် Managed service ဖြစ်သည်။
 
-LLM API ကို တိုက်ရိုက် အသုံးပြုခြင်းနှင့် နှိုင်းယှဉ်ပါက Azure AI Agent Service သည် အချို့သော အားသာချက်များကို ပေးသည်၊ ၎င်းမှာ-
+LLM API ကို တိုက်ရိုက် အသုံးပြုခြင်းနှင့် နှိုင်းယှဉ်လျှင် Azure AI Agent Service သည် အောက်ပါ အားသာချက်များပေးသည် -
 
-- Automatic tool calling – tool call ကို parse လုပ်ရန်၊ tool ကို invoke လုပ်ရန်၊ response ကို handle လုပ်ရန် မလိုအပ်တော့ဘဲ server-side တွင် အားလုံးကို လုပ်ဆောင်ပေးသည်။
-- Securely managed data – conversation state ကို ကိုယ်တိုင် စီမံရန်မလိုအပ်တော့ဘဲ threads ကို အသုံးပြု၍ လိုအပ်သော အချက်အလက်အားလုံးကို သိမ်းဆည်းနိုင်သည်။
-- Out-of-the-box tools – Bing, Azure AI Search, နှင့် Azure Functions ကဲ့သို့ data sources များနှင့် interaction လုပ်ရန် အသုံးပြုနိုင်သော tools များ။
+- ကိရိယာခေါ်ဆိုမှုကို အလိုအလျောက် ပြုလုပ်ခြင်း – ကိရိယာခေါ်ဆိုမှုကို မြင်ညွှန်းစစ်ပြီး tool ကို ခေါ်သုံးပြီး တုံ့ပြန်ချက်ကို ထိန်းညှိရန် မလိုအပ်ပဲ ဆာဗာဘက်တွင် အမှတ်အသားသွားဆောင်ရွက်ပေးသည်။
+- ဒေတာများကို လုံခြုံစွာ စီမံခြင်း – ကိုယ်ပိုင် စကားပြောဆိုမှု ပြည်တွင်းသိုလှောင်မှု မလိုပဲ thread များကို အချက်အလက် စုဆောင်းထိန်းသိမ်းရန် အောက်ခံထားနိုင်သည်။
+- ရှိပြီးသား ကိရိယာများ – Bing, Azure AI Search, Azure Functions ကဲ့သို့သော ဒေတာရင်းမြစ်များနှင့် ဆက်သွယ်ရန် တိုက်ရိုက်အသုံးပြုနိုင်သော ကိရိယာများ။
 
-Azure AI Agent Service တွင် ရရှိနိုင်သော tools များကို အောက်ပါအတိုင်း အမျိုးအစားနှစ်မျိုးခွဲနိုင်သည်-
+Azure AI Agent Service သည် ကိရိယာများကို အောက်ပါ ၂ မျိုးခွဲခြားနိုင်သည် -
 
-1. Knowledge Tools:
-    - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/bing-grounding?tabs=python&pivots=overview" target="_blank">Grounding with Bing Search</a>
-    - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/file-search?tabs=python&pivots=overview" target="_blank">File Search</a>
+1. အသိပညာကိရိယာများ:
+    - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/bing-grounding?tabs=python&pivots=overview" target="_blank">Bing Search ဖြင့် စိစစ်ခြင်း</a>
+    - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/file-search?tabs=python&pivots=overview" target="_blank">ဖိုင်ရှာဖွေရေး</a>
     - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/azure-ai-search?tabs=azurecli%2Cpython&pivots=overview-azure-ai-search" target="_blank">Azure AI Search</a>
 
-2. Action Tools:
+2. လုပ်ဆောင်ချက် ကိရိယာများ:
     - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/function-calling?tabs=python&pivots=overview" target="_blank">Function Calling</a>
     - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/code-interpreter?tabs=python&pivots=overview" target="_blank">Code Interpreter</a>
-    - <a href="https://learn.microsoft.com/azure/ai-services/agents/how
-အက်ဥ်းချုပ် - အက်ပ်ကို လုံခြုံသောပတ်ဝန်းကျင်တွင် အလုပ်လုပ်စေခြင်းသည် ကာကွယ်မှုကို ပိုမိုတိုးမြှင့်ပေးနိုင်သည်။ စီးပွားရေးလုပ်ငန်းများတွင် အချက်အလက်များကို လုပ်ငန်းစဉ်များမှ ထုတ်ယူပြီး အသုံးပြုရလွယ်ကူသော schema ပါရှိသော ဖတ်ရှုနိုင်သော database သို့မဟုတ် data warehouse သို့ ပြောင်းလဲသိမ်းဆည်းလေ့ရှိသည်။ ဒီနည်းလမ်းက အချက်အလက်များကို လုံခြုံစေပြီး၊ စွမ်းဆောင်ရည်နှင့် အသုံးပြုနိုင်မှုအတွက် အကောင်းဆုံးဖြစ်စေပြီး၊ အက်ပ်ကို ဖတ်ရှုနိုင်မှုသာရှိသော အခွင့်အာဏာပေးထားသည်။
+    - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/openapi-spec?tabs=python&pivots=overview" target="_blank">OpenAPI က သတ်မှတ်ထားသော ကိရိယာများ</a>
+    - <a href="https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/azure-functions?pivots=overview" target="_blank">Azure Functions</a>
 
-### Tool Use Design Patterns အကြောင်း ပိုမိုသိချင်ပါသလား?
+Agent Service သည် ၎င်းကိရိယာများကို `toolset` အဖြစ် အတူသုံးနိုင်ရန် နှင့် သတ်မှတ်ထားသော စကားပြောဆိုမှုမှ အချက်အလက်များကို မှတ်တမ်းတင်ထားသည့် `threads` ကို အသုံးပြုသည်။
 
-အခြားလေ့လာသူများနှင့် တွေ့ဆုံရန်၊ office hours တွင် ပါဝင်ရန်၊ သင့် AI Agents အကြောင်းမေးခွန်းများကို ဖြေရှင်းရန် [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) ကို ဝင်ရောက်ပါ။
+Contoso ဟု အမည်ရှိကုမ္ပဏီတစ်ခုတွင် အရောင်းကိုယ်စားလှယ်တစ်ဦး ဖြစ်ကြောင်း စဉ်းစားပါ။ သင်သည် သင်၏ အရောင်းအချက်အလက်အပေါ် မေးခွန်းများ ဖြေဆိုနိုင်သော စကားပြောဆိုမှု အေးဂျင့် တစ်ခု ဖန်တီးလိုသည်။
 
-## အပိုဆောင်း အရင်းအမြစ်များ
+အောက်ပါပုံသည် Azure AI Agent Service ကို အသုံးပြုပြီး သင်၏ အရောင်းအချက်အလက်များကို ခွဲခြမ်းစိတ်ဖြာသည့် နည်းလမ်းကို ဖော်ပြထားသည် -
+
+![Agentic Service In Action](../../../translated_images/my/agent-service-in-action.34fb465c9a84659e.webp)
+
+ဤကိရိယာများထဲမှ တစ်ခုခုကို service နှင့် အသုံးပြုရန် client တစ်ခု ဖန်တီးပြီး tool လုပ် ဒါမှမဟုတ် toolset သတ်မှတ်နိုင်သည်။ လက်တွေ့တွင် Python ကုဒ်အောက်ပါအတိုင်း အသုံးပြုနိုင်သည်။ LLM သည် toolset ကို ကြည့်၍ အသုံးပြုသူ ဖြင့် ဖန်တီးထားသော `fetch_sales_data_using_sqlite_query` function သို့မဟုတ် ပြင်ပရှိ Code Interpreter ကို အသုံးပြုရန် ဆုံးဖြတ်လိမ့်မည်။
+
+```python 
+import os
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+from fetch_sales_data_functions import fetch_sales_data_using_sqlite_query # fetch_sales_data_using_sqlite_query အလုပ်အစီအစဉ်ကို fetch_sales_data_functions.py ဖိုင်ထဲတွင်တွေ့နိုင်သည်။
+from azure.ai.projects.models import ToolSet, FunctionTool, CodeInterpreterTool
+
+project_client = AIProjectClient.from_connection_string(
+    credential=DefaultAzureCredential(),
+    conn_str=os.environ["PROJECT_CONNECTION_STRING"],
+)
+
+# ကိရိယာစနစ်ကို စတင်တပ်ဆင်သည်
+toolset = ToolSet()
+
+# fetch_sales_data_using_sqlite_query အလုပ်အစီအစဉ်နှင့် function calling agent ကို စတင်တပ်ဆင်ပြီး toolset တွင် ထည့်သွင်းသည်
+fetch_data_function = FunctionTool(fetch_sales_data_using_sqlite_query)
+toolset.add(fetch_data_function)
+
+# Code Interpreter ကိရိယာကို စတင်တပ်ဆင်ပြီး toolset တွင် ထည့်သွင်းသည်။
+code_interpreter = code_interpreter = CodeInterpreterTool()
+toolset.add(code_interpreter)
+
+agent = project_client.agents.create_agent(
+    model="gpt-4o-mini", name="my-agent", instructions="You are helpful agent", 
+    toolset=toolset
+)
+```
+
+## ယုံကြည်စိတ်ချရသော AI အေးဂျင့်များ ဖန်တီးရာတွင် ကိရိယာအသုံးပြု ဒီဇိုင်းပုံစံကို အသုံးပြုရာရှိ အထူးစဉ်းစားရမည့် ချက်များ
+
+LLM များမှ ဒိုင်နမစ်ပြုလုပ်သော SQL များတွင် လုံခြုံရေးအရေးပါသည်။ အထူးသဖြင့် SQL injection သို့မဟုတ် database ကို ဖျက်ဆီးခြင်း၊ ပျက်စီးအောင် ပြုလုပ်ခြင်းကဲ့သို့ အန္တရာယ်ရှိနိုင်သည်။ ဤစိုးရိမ်ချက်များမှာ တကယ်လက်တွေ့ရှိပြီး database access လိုင်စင်မှန်ကန်စွာ မသတ်မှတ်လျှင် ဖြစ်ပေါ်နိုင်သည်။ များသော ဒေတာဘေ့စ်များတွင် database ကို ဖတ်-only အခြေအနေ ဖြင့် သတ်မှတ်ရုံဖြင့် ဒီအန္တရာယ်များကို လျော့နည်းစေပါသည်။ PostgreSQL သို့မဟုတ် Azure SQL ကဲ့သို့သော database ဝန်ဆောင်မှုများတွင် app ကို ဖတ်-only (SELECT) role ဖြစ်အောင် သတ်မှတ်သင့်သည်။
+လုံခြုံသောပတ်ဝန်းကျင်တွင် app ကိုလည်ပတ်ခြင်းသည် လုံခြုံမှုကို ပိုမိုတိုးတက်စေသည်။ စက်မှုလုပ်ငန်းအခြေအနေများတွင်၊ ဒေတာကို ပုံမှန်အားဖြင့် လုပ်ငန်းဆောင်တာစနစ်များမှ ထုတ်ယူပြီး ဖတ်ရန်သာဖြစ်သော ဒေတာဘေ့စ် သို့မဟုတ် ဒေတာဂိုဏ်းတွင် အသုံးပြုရန်အဆင်ပြေသော schema ဖြင့် ပြောင်းလဲထည့်သွင်းသည်။ ဤနည်းလမ်းလည်း ဒေတာများကို လုံခြုံစေရန်၊ စွမ်းဆောင်ရည်နှင့် ဝင်ရောက်နိုင်မှုများအတွက် အကောင်းဆုံးပြုလုပ်ထားရန်နှင့် app သည် ဖတ်ရန်သာ ခွင့်ပြုထားသော ဝင်ရောက်ခွင့်ဖြင့် လည်ပတ်စေရန် အာမခံပေးသည်။
+
+## Sample Codes
+
+- Python: [Agent Framework](./code_samples/04-python-agent-framework.ipynb)
+- .NET: [Agent Framework](./code_samples/04-dotnet-agent-framework.md)
+
+## Got More Questions about the Tool Use Design Patterns?
+
+Join the [Azure AI Foundry Discord](https://aka.ms/ai-agents/discord) to meet with other learners, attend office hours and get your AI Agents questions answered.
+
+## Additional Resources
 
 - <a href="https://microsoft.github.io/build-your-first-agent-with-azure-ai-agent-service-workshop/" target="_blank">Azure AI Agents Service Workshop</a>
 - <a href="https://github.com/Azure-Samples/contoso-creative-writer/tree/main/docs/workshop" target="_blank">Contoso Creative Writer Multi-Agent Workshop</a>
@@ -279,15 +326,17 @@ Azure AI Agent Service တွင် ရရှိနိုင်သော tools �
 - <a href="https://github.com/microsoft/semantic-kernel/blob/main/python/samples/getting_started_with_agents/openai_assistant/step3_assistant_tool_code_interpreter.py" target="_blank">Semantic Kernel Code Interpreter</a>
 - <a href="https://microsoft.github.io/autogen/dev/user-guide/core-user-guide/components/tools.html" target="_blank">Autogen Tools</a>
 
-## ယခင် သင်ခန်းစာ
+## Previous Lesson
 
-[Agentic Design Patterns ကို နားလည်ခြင်း](../03-agentic-design-patterns/README.md)
+[Understanding Agentic Design Patterns](../03-agentic-design-patterns/README.md)
 
-## နောက်သင်ခန်းစာ
+## Next Lesson
 
 [Agentic RAG](../05-agentic-rag/README.md)
 
 ---
 
-**အကြောင်းကြားချက်**:  
-ဤစာရွက်စာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ကို အသုံးပြု၍ ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည် တိကျမှန်ကန်မှုအတွက် ကြိုးစားနေသော်လည်း၊ အလိုအလျောက် ဘာသာပြန်ခြင်းတွင် အမှားများ သို့မဟုတ် မမှန်ကန်မှုများ ပါဝင်နိုင်သည်ကို သတိပြုပါ။ မူရင်းဘာသာစကားဖြင့် ရေးသားထားသော စာရွက်စာတမ်းကို အာဏာတရားရှိသော ရင်းမြစ်အဖြစ် သတ်မှတ်သင့်ပါသည်။ အရေးကြီးသော အချက်အလက်များအတွက် လူ့ဘာသာပြန်ပညာရှင်များကို အသုံးပြု၍ ဘာသာပြန်ခြင်းကို အကြံပြုပါသည်။ ဤဘာသာပြန်ကို အသုံးပြုခြင်းမှ ဖြစ်ပေါ်လာသော အလွဲအလွဲအချော်များ သို့မဟုတ် အနားလွဲမှုများအတွက် ကျွန်ုပ်တို့သည် တာဝန်မယူပါ။
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**အကြောင်းကြားချက်**  
+ဤစာတမ်းကို AI ဘာသာပြန်ဝန်ဆောင်မှု [Co-op Translator](https://github.com/Azure/co-op-translator) ဖြင့်ဘာသာပြန်ထားပါသည်။ ကျွန်ုပ်တို့သည်တိကျမှုအတွက်ကြိုးပမ်းသည်ဖြစ်ပေမယ့် အလိုအလျောက်ဘာသာပြန်ခြင်းမျှသော အမှားများ သို့မဟုတ် အမှားအယွင်းများ ပါဝင်နိုင်ကြောင်း သတိပြုပါရန်။ မူလစာတမ်းကို မိမိဘာသာဖြင့်သာ အတည်ပြုရင်းမြစ်အဖြစ်ယူဆရန် သင့်တော်သည်။ အရေးကြီးသောအချက်အလက်များအတွက်တော့ ပရော်ဖက်ရှင်နယ် လူ့ဘာသာပြန်မှုပို၍ ယုံကြည်စိတ်ချစေပါသည်။ ဤဘာသာပြန်မှုကို အသုံးပြုရာမှ ဖြစ်ပေါ်မည့် နားလည်မှု ချွတ်ယွင်းမှုများအတွက် အမှုခံယူမည်မဟုတ်ပါ။
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

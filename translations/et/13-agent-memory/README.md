@@ -1,160 +1,171 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d2c9703548140bafa2d6a77406552542",
-  "translation_date": "2025-10-11T11:12:39+00:00",
-  "source_file": "13-agent-memory/README.md",
-  "language_code": "et"
-}
--->
-# Mälu AI-agentide jaoks
-[![Agent Memory](../../../translated_images/lesson-13-thumbnail.959e3bc52d210c64a614a3bece6b170a2c472138dc0a14c7fbde07306ef95ae7.et.png)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
+# Mälu AI agentidele 
+[![Agent Memory](../../../translated_images/et/lesson-13-thumbnail.959e3bc52d210c64.webp)](https://youtu.be/QrYbHesIxpw?si=qNYW6PL3fb3lTPMk)
 
-AI-agentide loomise unikaalsete eeliste arutamisel keskendutakse peamiselt kahele asjale: tööriistade kasutamisele ülesannete täitmiseks ja võimele aja jooksul paremaks muutuda. Mälu on aluseks isetäieneva agendi loomisele, mis suudab pakkuda meie kasutajatele paremaid kogemusi.
+Kui räägitakse AI agentide loomise unikaalsetest eelistest, siis käsitletakse peamiselt kahte asja: võimet kasutada tööriistu ülesannete täitmiseks ja võimet aja jooksul paremaks saada. Mälu on aluseks iseenda arendava agendi loomisel, kes suudab meie kasutajatele pakkuda paremaid kogemusi.
 
-Selles õppetükis vaatame, mis on mälu AI-agentide jaoks ning kuidas seda hallata ja rakendada meie rakenduste kasuks.
+Selles õppetükis vaatleme, mis on mälu AI agentide jaoks ja kuidas saame seda hallata ning kasutada meie rakenduste huvides.
 
 ## Sissejuhatus
 
-Selles õppetükis käsitletakse:
+See õppetükk hõlmab:
 
-• **AI-agentide mälu mõistmine**: Mis on mälu ja miks see agentide jaoks oluline on.
+• **AI agendi mälu mõistmine**: Mis on mälu ja miks see agentidele oluline on.
 
-• **Mälu rakendamine ja salvestamine**: Praktilised meetodid, kuidas lisada AI-agentidele mälufunktsioone, keskendudes lühi- ja pikaajalisele mälule.
+• **Mälu rakendamine ja salvestamine**: Praktilised meetodid mäluvõime lisamiseks oma AI agentidele, keskendudes lühiajalisele ja pikaajalisele mälule.
 
-• **AI-agentide isetäiendamine**: Kuidas mälu võimaldab agentidel õppida varasematest interaktsioonidest ja aja jooksul paremaks muutuda.
+• **AI agentide iseenda parandamine**: Kuidas mälu võimaldab agentidel õppida varasematest interaktsioonidest ja aja jooksul paremaks saada.
+
+## Saadaval olevad rakendused
+
+See õppetükk sisaldab kahte põhjalikku märkmiku õpetust:
+
+• **[13-agent-memory.ipynb](./13-agent-memory.ipynb)**: Rakendab mälu, kasutades Mem0 ja Azure AI Search Semantic Kernel raamistikuga
+
+• **[13-agent-memory-cognee.ipynb](./13-agent-memory-cognee.ipynb)**: Rakendab struktureeritud mälu, kasutades Cognee’d, mis ehitab automaatselt teadmiste graafi, toetatud sissekannete abil, visualiseerib graafi ja võimaldab intelligentset päringut
 
 ## Õpieesmärgid
 
 Pärast selle õppetüki läbimist oskad:
 
-• **Eristada erinevaid AI-agentide mälutüüpe**, sealhulgas töömälu, lühiajalist ja pikaajalist mälu, samuti spetsialiseeritud vorme nagu persona- ja episoodiline mälu.
+• **Erinevaid AI agendi mälutüüpe eristada**, sealhulgas töömälu, lühiajalist ja pikaajalist mälu ning spetsialiseeritud vorme nagu persona ja episoodiline mälu.
 
-• **Rakendada ja hallata AI-agentide lühi- ja pikaajalist mälu** kasutades Semantic Kernel raamistikku, tööriistu nagu Mem0 ja Whiteboard memory ning integreerides Azure AI Searchiga.
+• **Rakendada ja hallata lühiajalist ja pikaajalist mälu AI agentidele** Semantic Kernel raamistikuga, kasutades tööriistu nagu Mem0, Cognee, Whiteboard memory ning integreerides Azure AI Searchiga.
 
-• **Mõista isetäiendavate AI-agentide põhimõtteid** ja kuidas tugevad mäluhaldussüsteemid aitavad kaasa pidevale õppimisele ja kohanemisele.
+• **Mõista iseenda parandavate AI agentide põhimõtteid** ja kuidas tugevad mäluhaldussüsteemid toetavad pidevat õppimist ja kohanemist.
 
-## AI-agentide mälu mõistmine
+## AI agendi mälu mõistmine
 
-Põhimõtteliselt viitab **mälu AI-agentide jaoks mehhanismidele, mis võimaldavad neil säilitada ja meenutada teavet**. See teave võib hõlmata konkreetseid detaile vestlusest, kasutaja eelistusi, varasemaid tegevusi või isegi õpitud mustreid.
+Sisuliselt tähendab **mälu AI agentide jaoks mehhanisme, mis võimaldavad neil säilitada ja meenutada informatsiooni**. See informatsioon võib olla spetsiifilised detailid vestlusest, kasutaja eelistused, varasemad tegevused või isegi õpitud mustrid.
 
-Ilma mäluta on AI-rakendused sageli olekuta, mis tähendab, et iga interaktsioon algab nullist. See viib korduva ja frustreeriva kasutajakogemuseni, kus agent "unustab" varasema konteksti või eelistused.
+Ilma mäluta on AI rakendused sageli olekuta, mis tähendab, et iga interaktsioon algab nullist. See viib korduva ja frustreeriva kasutajakogemuseni, kus agent "unustab" varasema konteksti või eelistused.
 
 ### Miks on mälu oluline?
 
-Agendi intelligentsus on tihedalt seotud tema võimega meenutada ja kasutada varasemat teavet. Mälu võimaldab agentidel olla:
+Agendi intelligentsus on tugevalt seotud selle võimega meenutada ja kasutada varasemat informatsiooni. Mälu võimaldab agentidel olla:
 
-• **Reflektiivne**: Õppida varasematest tegevustest ja tulemustest.
+• **Reflektsioonivõimelised**: Õppida varasematest tegevustest ja tulemustest.
 
-• **Interaktiivne**: Säilitada konteksti käimasoleva vestluse ajal.
+• **Interaktiivsed**: Säilitada konteksti jooksva vestluse jooksul.
 
-• **Proaktiivne ja reaktiivne**: Ennustada vajadusi või reageerida sobivalt ajalooliste andmete põhjal.
+• **Proaktiivsed ja reaktiivsed**: Eelnevalt vajadusi prognoosida või vastavalt ajaloolistele andmetele õigesti reageerida.
 
-• **Autonoomne**: Tegutseda iseseisvamalt, tuginedes salvestatud teadmistele.
+• **Autonoomsed**: Töötada iseseisvalt, tuginedes salvestatud teadmistele.
 
-Mälu rakendamise eesmärk on muuta agendid **usaldusväärsemaks ja võimekamaks**.
+Mälu rakendamise eesmärk on muuta agendid usaldusväärsemaks ja võimekamaks.
 
 ### Mälutüübid
 
 #### Töömälu
 
-Mõtle sellele kui agendi "märkmepaberile", mida ta kasutab ühe käimasoleva ülesande või mõtteprotsessi ajal. See hoiab kohest teavet, mis on vajalik järgmise sammu arvutamiseks.
+Mõtle sellele nagu löökpaberile, mida agent kasutab ühe käimasoleva ülesande või mõttekäigu ajal. See hoiab vahetut informatsiooni, mida on vaja järgmise sammu arvutamiseks.
 
-AI-agentide puhul salvestab töömälu sageli vestluse kõige olulisema teabe, isegi kui kogu vestluse ajalugu on pikk või kärbitud. See keskendub võtmeelementide, nagu nõuded, ettepanekud, otsused ja tegevused, väljavõtmisele.
+AI agentide jaoks püüab töömälu sageli vestlusest kinni kõige olulisema info, isegi kui kogu vestluse ajalugu on pikk või lühendatud. Fookuses on võtmeelementide, nagu nõuded, ettepanekud, otsused ja tegevused, väljavõtmine.
 
 **Töömälu näide**
 
-Reisi broneerimise agent võib töömälu abil salvestada kasutaja praeguse soovi, näiteks "Ma tahan broneerida reisi Pariisi". See konkreetne nõue hoitakse agendi vahetus kontekstis, et suunata käimasolevat interaktsiooni.
+Reisibroneerimise agendi puhul võib töömälu hoida kasutaja hetke päringut, näiteks "Ma tahan broneerida reisi Pariisi". See spetsiifiline nõue on agendi vahetus kontekstis, et juhendada praegust interaktsiooni.
 
 #### Lühiajaline mälu
 
-See mälutüüp säilitab teavet ühe vestluse või sessiooni jooksul. See on praeguse vestluse kontekst, mis võimaldab agendil viidata vestluse varasematele pöördumistele.
+See mälutüüp säilitab infot kogu ühe vestluse või sessiooni kestel. See on hetkevestluse kontekst, mis võimaldab agentil viidata eelnevatele dialoogi sammudele.
 
 **Lühiajalise mälu näide**
 
-Kui kasutaja küsib: "Kui palju maksaks lend Pariisi?" ja seejärel jätkab: "Aga majutus seal?", tagab lühiajaline mälu, et agent teab, et "seal" viitab "Pariisile" sama vestluse raames.
+Kui kasutaja küsib, "Kui palju maksab lend Pariisi?" ja järgneb "Aga majutuse hind seal?", tagab lühiajaline mälu, et agent teab, et "seal" viitab samas vestluses "Pariisile".
 
 #### Pikaajaline mälu
 
-See on teave, mis püsib mitme vestluse või sessiooni jooksul. See võimaldab agentidel meeles pidada kasutaja eelistusi, ajaloolisi interaktsioone või üldisi teadmisi pikema aja jooksul. See on oluline personaliseerimise jaoks.
+See on info, mis püsib mitme vestluse või sessiooni vahel. See võimaldab agentidel meenutada kasutaja eelistusi, ajaloolisi interaktsioone või üldteadmisi pikema aja jooksul. See on oluline personaliseerimise jaoks.
 
 **Pikaajalise mälu näide**
 
-Pikaajaline mälu võib salvestada, et "Ben naudib suusatamist ja välitegevusi, eelistab kohvi mäevaatega ning soovib vältida keerulisi suusaradu varasema vigastuse tõttu". See teave, mis on õpitud varasematest interaktsioonidest, mõjutab tulevaste reisiplaanide soovitusi, muutes need väga isikupäraseks.
+Pikaajalise mälu puhul võib olla salvestatud, et "Ben naudib suusatamist ja välitegevusi, armastab kohvi mäevaatega ning soovib vältida keerulisi suusaradu varasema vigastuse tõttu". See info, õpitud varasematest interaktsioonidest, mõjutab soovitusi tulevastes reisiplaanimise sessioonides, muutes need väga personaalseks.
 
 #### Persona mälu
 
-See spetsialiseeritud mälutüüp aitab agendil arendada järjepidevat "isiksust" või "rolli". See võimaldab agendil meeles pidada detaile enda kohta või oma kavandatud rolli, muutes interaktsioonid sujuvamaks ja keskendunumaks.
+See spetsialiseerunud mälutüüp aitab agendil arendada järjepidevat "isiksust" või "persona". See võimaldab agendil meeles pidada detaile enda või oma ettenähtud rolli kohta, muutes interaktsioonid ladusamaks ja fokuseeritumaks.
 
 **Persona mälu näide**
 
-Kui reisiplaneerimise agent on loodud olema "ekspert suusareiside planeerimisel", võib persona mälu tugevdada seda rolli, mõjutades vastuseid, et need vastaksid eksperdi toonile ja teadmistele.
+Kui reisibüroo agent on kujundatud „eksperdi suusareiside planeerijana“, tugevdab persona mälu seda rolli, mõjutades vastuseid nii, et need sobiksid eksperdi tooniga ja teadmistega.
 
 #### Töövoo/episoodiline mälu
 
-See mälu salvestab agendi tehtud sammude järjestuse keeruka ülesande ajal, sealhulgas õnnestumised ja ebaõnnestumised. See on nagu konkreetsete "episoodide" või varasemate kogemuste meelespidamine, et neist õppida.
+See mälu salvestab sammude järjestuse, mida agent võtab keerulise ülesande ajal, kaasa arvatud õnnestumised ja ebaõnnestumised. See on nagu konkreetsete "episoodide" või varasemate kogemuste meelespidamine, et neist õppida.
 
 **Episoodilise mälu näide**
 
-Kui agent üritas broneerida konkreetset lendu, kuid see ebaõnnestus saadavuse puudumise tõttu, võiks episoodiline mälu salvestada selle ebaõnnestumise, võimaldades agendil proovida alternatiivseid lende või teavitada kasutajat probleemist informeeritumalt järgmisel katsel.
+Kui agent püüdis broneerida kindlat lendu, aga see ebaõnnestus saadavuse puudumise tõttu, võiks episoodiline mälu selle ebaõnnestumise salvestada, võimaldades agendil proovida alternatiivseid lende või teavitada kasutajat probleemist teadlikumal viisil järgmise katse puhul.
 
 #### Entiteedi mälu
 
-See hõlmab konkreetsete entiteetide (nagu inimesed, kohad või asjad) ja sündmuste väljavõtmist ja meelespidamist vestlustest. See võimaldab agendil luua struktureeritud arusaama arutatud võtmeelementidest.
+See hõlmab konkreetsete entiteetide (inimesed, kohad, esemed) ja sündmuste väljavõtmist ja meeldejätmist vestlustest. See võimaldab agendil ehitada struktureeritud arusaama käsitletud võtmeelementidest.
 
 **Entiteedi mälu näide**
 
-Vestlusest varasema reisi kohta võib agent välja võtta "Pariis", "Eiffeli torn" ja "õhtusöök restoranis Le Chat Noir". Tulevases interaktsioonis võiks agent meenutada "Le Chat Noir" ja pakkuda seal uut broneeringut.
+Vestlusest varasema reisi teemal võib agent välja võtta "Pariis", "Eiffeli torn" ja "õhtusöök restoranis Le Chat Noir" kui entiteedid. Tulevases interaktsioonis võib agent meenutada "Le Chat Noir’i" ja pakkuda uut broneeringut seal.
 
 #### Struktureeritud RAG (Retrieval Augmented Generation)
 
-Kuigi RAG on laiem tehnika, tõstetakse "Struktureeritud RAG" esile kui võimsat mälutehnoloogiat. See eraldab tihedalt struktureeritud teavet erinevatest allikatest (vestlused, e-kirjad, pildid) ja kasutab seda täpsuse, meenutamise ja kiiruse parandamiseks vastustes. Erinevalt klassikalisest RAG-st, mis tugineb ainult semantilisele sarnasusele, töötab Struktureeritud RAG teabe sisemise struktuuriga.
+Kuigi RAG on laiem tehnika, on "Struktureeritud RAG" rõhutatud kui võimas mälutehnoloogia. See eraldab tihedat, struktureeritud informatsiooni erinevatest allikatest (vestlustest, e-kirjadest, piltidest) ja kasutab seda vastuste täpsuse, meenutamise ja kiiruse parandamiseks. Erinevalt klassikalisest RAG-st, mis tugineb ainult semantilisele sarnasusele, töötab Struktureeritud RAG info loomuliku struktuuriga.
 
 **Struktureeritud RAG näide**
 
-Selle asemel, et lihtsalt märksõnu sobitada, võiks Struktureeritud RAG e-kirjast välja võtta lennuandmed (sihtkoht, kuupäev, kellaaeg, lennufirma) ja salvestada need struktureeritud viisil. See võimaldab täpseid päringuid, nagu "Millise lennu ma Pariisi teisipäeval broneerisin?"
+Selle asemel, et ainult märksõnu sobitada, võiks Struktureeritud RAG parsida lennu detailsed andmed (sihtkoht, kuupäev, kellaaeg, lennufirma) e-kirjast ja salvestada need struktureeritud viisil. See võimaldab täpseid päringuid nagu "Millise lennu ma broneerisin Pariisi teisipäeval?".
 
 ## Mälu rakendamine ja salvestamine
 
-AI-agentide mälu rakendamine hõlmab **mäluhalduse** süstemaatilist protsessi, mis sisaldab teabe genereerimist, salvestamist, meenutamist, integreerimist, uuendamist ja isegi "unustamist" (või kustutamist). Meenutamine on eriti oluline aspekt.
+Mälu rakendamine AI agentidele hõlmab süsteemset protsessi, mis sisaldab **mäluhaldust**: info genereerimist, salvestamist, päringut, integreerimist, uuendamist ning isegi "unustamist" (kustutamist). Päring on eriti oluline osa.
 
-### Spetsialiseeritud mälutööriistad
+### Spetsialiseerunud mälu tööriistad
 
-Üks viis agendi mälu salvestamiseks ja haldamiseks on kasutada spetsialiseeritud tööriistu nagu Mem0. Mem0 toimib püsiva mälukihina, võimaldades agentidel meenutada asjakohaseid interaktsioone, salvestada kasutaja eelistusi ja faktilist konteksti ning õppida aja jooksul õnnestumistest ja ebaõnnestumistest. Idee seisneb selles, et olekuta agendid muutuvad olekuga agentideks.
+#### Mem0
 
-See töötab **kahefaasilise mälutoru kaudu: väljavõtmine ja uuendamine**. Esiteks saadetakse agendi lõime lisatud sõnumid Mem0 teenusesse, mis kasutab suurt keelemudelit (LLM), et kokku võtta vestluse ajalugu ja välja võtta uued mälud. Seejärel määrab LLM-põhine uuendusfaas, kas need mälud lisada, muuta või kustutada, salvestades need hübriidandmehoidlasse, mis võib hõlmata vektorit, graafi ja võtme-väärtuse andmebaase. See süsteem toetab ka erinevaid mälutüüpe ja võib sisaldada graafimälu, et hallata entiteetide vahelisi suhteid.
+Üks viis agentide mälu salvestamiseks ja haldamiseks on kasutada spetsiaalset tööriista nagu Mem0. Mem0 toimib püsiva mälukihina, võimaldades agentidel meenutada olulisi interaktsioone, salvestada kasutaja eelistusi ja fakte ning õppida edust ja läbikukkumistest ajas. Ülesandeks on muuta olekuta agendid olekuga agentideks.
+
+See toimib **kahefaasilise mälutöötlusega: info eraldamine ja uuendamine**. Esiteks saadetakse agenti vestluslõime sõnumid Mem0 teenusele, mis kasutab suurt keelemudelit (LLM) vestluse ajaloo kokkuvõtmiseks ja uute mälestuste eraldamiseks. Seejärel otsustab LLM-i juhitud uuendusfaas, kas lisada, muuta või kustutada need mälud, salvestades need hübriidandmebaasi, mis võib sisaldada vektor-, graafi- ja võtme-väärtuse andmebaase. See süsteem toetab mitut mälutüüpi ning võib kaasata graafimälu entiteetidevaheliste suhete haldamiseks.
+
+#### Cognee
+
+Teine võimas lähenemine on kasutada **Cognee’d**, avatud lähtekoodiga semantilist mälu AI agentidele, mis teisendab struktureeritud ja struktureerimata andmed päringuteks sobivateks teadmiste graafideks, mida toetavad embeddings’id. Cognee pakub **kahe poega arhitektuuri**, kombineerides vektorite sarnasusotsingu ja graafisuhted, mis võimaldavad agentidel mõista mitte ainult informatsiooni sarnasust, vaid ka mõistete omavahelist seost.
+
+Ta on suurepärane **hübriidpäringus**, mis segab vektorite sarnasust, graafistruktuuri ja LLM-i mõtlemist – alates toorest tükipesast kuni graafitundliku küsimuste vastamiseni. Süsteem hoiab **elavat mälu**, mis areneb ja kasvab, jäädes samal ajal päringuks ühendatud graafina, toetades nii lühiajalist sessiooni konteksti kui ka pikaajalist püsivat mälu.
+
+Cognee märkmiku õpetus ([13-agent-memory-cognee.ipynb](./13-agent-memory-cognee.ipynb)) demonstreerib selle ühtse mälukihi ehitamist koos praktiliste näidetega mitmekesiste andmeallikate lisamiseks, teadmiste graafi visualiseerimiseks ja erinevate otsingustrateegiatega päringuteks, mis on kohandatud konkreetsete agentide vajadustele.
 
 ### Mälu salvestamine RAG-ga
 
-Lisaks spetsialiseeritud mälutööriistadele nagu Mem0, saab kasutada tugevaid otsinguteenuseid, nagu **Azure AI Search, mälude salvestamiseks ja meenutamiseks**, eriti struktureeritud RAG jaoks.
+Spetsiaalsete mälutööriistade kõrval nagu Mem0, saate kasutada tugevaid otsinguteenuseid nagu **Azure AI Search mälu salvestamiseks ja pärimiseks**, eriti struktureeritud RAG puhul.
 
-See võimaldab agendi vastuseid siduda oma andmetega, tagades asjakohasemad ja täpsemad vastused. Azure AI Searchi saab kasutada kasutajaspetsiifiliste reiside mälude, tootekataloogide või mis tahes muu valdkonnaspetsiifilise teadmise salvestamiseks.
+See võimaldab maandada agendi vastused oma andmetele, tagades asjakohasemad ja täpsemad vastused. Azure AI Searchi saab kasutada kasutajapõhiste reisimälestuste, tooteloendite või muude domeenispetsiifiliste teadmiste hoidmiseks.
 
-Azure AI Search toetab funktsioone nagu **Struktureeritud RAG**, mis paistab silma tihedalt struktureeritud teabe eraldamise ja meenutamisega suurtest andmekogumitest, nagu vestluste ajalugu, e-kirjad või isegi pildid. See pakub "üliinimlikku täpsust ja meenutamist" võrreldes traditsiooniliste tekstitükeldamise ja sisestamise lähenemisviisidega.
+Azure AI Search toetab funktsioone nagu **Struktureeritud RAG**, mis on suurepärane tiheda, struktureeritud info eraldamiseks ja pärimiseks suurtest andmehulkadest nagu vestluse ajalugu, e-kirjad või isegi pildid. See pakub "ülitäpsust ja meenutust" võrreldes traditsiooniliste tekstiosi töötlemise ja embeddings'i lähenemistega.
 
-## AI-agentide isetäiendamine
+## AI agentide iseparandamine
 
-Isetäiendavate agentide tavaline muster hõlmab **"teadmiste agendi"** kasutuselevõttu. See eraldi agent jälgib peamist vestlust kasutaja ja põhivahendi vahel. Selle roll on:
+Levinud muster iseparanevate agentide puhul on kasutada **"teadmisagentti"**. See eraldi agent jälgib peamist vestlust kasutaja ja põhiagendi vahel. Selle roll on:
 
-1. **Väärtusliku teabe tuvastamine**: Määrata, kas vestluse mõni osa on väärt salvestamist üldteadmiste või konkreetse kasutaja eelistusena.
+1. **Tuvastada väärtuslikku informatsiooni**: Otsustada, kas vestluse osa on väärt üldteadmiste või spetsiifilise kasutajapreferentsina salvestamist.
 
-2. **Väljavõtmine ja kokkuvõte**: Destilleerida vestlusest olulised õppetunnid või eelistused.
+2. **Eraldada ja kokku võtta**: Töötleda vestluse põhisisu või eelistuse kokkuvõtteks.
 
-3. **Salvestamine teadmistebaasi**: Säilitada see väljavõetud teave, sageli vektorandmebaasis, et seda hiljem meenutada.
+3. **Salvestada teadmistebaasi**: Hoida väljavõetud info sageli vektoriandmebaasis, et seda hiljem pärida.
 
-4. **Tulevaste päringute täiendamine**: Kui kasutaja algatab uue päringu, otsib teadmiste agent asjakohast salvestatud teavet ja lisab selle kasutaja päringule, pakkudes põhivahendile olulist konteksti (sarnaselt RAG-le).
+4. **Täiendada tulevasi päringuid**: Kui kasutaja esitab uue päringu, pärib teadmisteagent seotud info ja lisab selle kasutaja päringu juurde, pakkudes peamisele agendile olulist konteksti (sarnaselt RAG-ga).
 
 ### Mälu optimeerimine
 
-• **Latentsuse haldamine**: Kasutajainteraktsioonide aeglustumise vältimiseks saab algselt kasutada odavamat ja kiiremat mudelit, et kiiresti kontrollida, kas teave on väärt salvestamist või meenutamist, kutsudes keerukama väljavõtmise/meenutamise protsessi ainult vajadusel.
+• **Latentsuse juhtimine**: Et vältida kasutaja interaktsioonide aeglustumist, võib alguses kasutada odavamat ja kiirendatud mudelit, mis kontrollib info väärtust, kaasates keerukama eralduse/päringu protsessi vaid vajadusel.
 
-• **Teadmistebaasi hooldus**: Kasvava teadmistebaasi jaoks saab harvemini kasutatavat teavet viia "külmsäilitusse", et hallata kulusid.
+• **Teadmistebaasi hooldus**: Kasvava teadmistebaasi puhul saab harvemini kasutatava infot viia "külma hoiustamise" sektsiooni, et kulusid hallata.
 
-## Kas sul on rohkem küsimusi agendi mälu kohta?
+## Kas sul on mäluga AI agentide kohta rohkem küsimusi?
 
-Liitu [Azure AI Foundry Discordiga](https://aka.ms/ai-agents/discord), et kohtuda teiste õppijatega, osaleda vastuvõtuaegadel ja saada vastuseid oma AI-agentide küsimustele.
+Liitu [Azure AI Foundry Discordiga](https://aka.ms/ai-agents/discord), kohtudes teiste õppijatega, osaledes kontoritundides ja saades oma AI agentide küsimustele vastused.
 
 ---
 
-**Lahtiütlus**:  
-See dokument on tõlgitud, kasutades AI tõlketeenust [Co-op Translator](https://github.com/Azure/co-op-translator). Kuigi püüame tagada täpsust, palume arvestada, et automaatsed tõlked võivad sisaldada vigu või ebatäpsusi. Algne dokument selle algkeeles tuleks lugeda autoriteetseks allikaks. Olulise teabe puhul soovitame kasutada professionaalset inimtõlget. Me ei vastuta selle tõlke kasutamisest tulenevate arusaamatuste või valede tõlgenduste eest.
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Vastutusest loobumine**:
+See dokument on tõlgitud kasutades tehisintellektil põhinevat tõlke teenust [Co-op Translator](https://github.com/Azure/co-op-translator). Kuigi püüame tagada täpsust, palun arvestage, et automaatsed tõlked võivad sisaldada vigu või ebatäpsusi. Originaaldokument selle emakeeles on autoriteetne allikas. Olulise teabe puhul soovitatakse kasutada professionaalset inimtõlget. Me ei vastuta selle tõlke kasutamisest tingitud arusaamatuste või valesti mõistmiste eest.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "cdfd0acc8592c1af14f8637833450375",
-  "translation_date": "2025-08-29T20:21:53+00:00",
-  "source_file": "10-ai-agents-production/README.md",
-  "language_code": "cs"
-}
--->
 # AI agenti v produkci: Observabilita a hodnocení
 
-[![AI agenti v produkci](../../../translated_images/lesson-10-thumbnail.2b79a30773db093e0b4fb47aaa618069e0afb4745fad4836526cf51df87f9ac9.cs.png)](https://youtu.be/l4TP6IyJxmQ?si=reGOyeqjxFevyDq9)
+[![AI agenti v produkci](../../../translated_images/cs/lesson-10-thumbnail.2b79a30773db093e.webp)](https://youtu.be/l4TP6IyJxmQ?si=reGOyeqjxFevyDq9)
 
 Jakmile se AI agenti přesunou z experimentálních prototypů do reálných aplikací, stává se klíčovou schopnost porozumět jejich chování, monitorovat jejich výkon a systematicky hodnotit jejich výstupy.
 

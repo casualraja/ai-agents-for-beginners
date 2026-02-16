@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T10:57:47+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "tl"
-}
--->
 # Github MCP Server Example
 
 ## Deskripsyon
@@ -53,7 +44,7 @@ Dapat nitong simulan ang iyong Chainlit server sa `localhost:8000` pati na rin p
 
 Upang kumonekta sa Github MCP Server, piliin ang icon na "plug" sa ilalim ng chat box na "Type your message here..":
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.tl.png)
+![MCP Connect](../../../../../translated_images/tl/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 Mula doon, maaari mong i-click ang "Connect an MCP" upang idagdag ang command para kumonekta sa Github MCP Server:
 

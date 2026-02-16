@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-30T00:19:36+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "my"
-}
--->
 # Github MCP Server ဥပမာ
 
 ## ဖော်ပြချက်
@@ -53,7 +44,7 @@ chainlit run app.py -w
 
 Github MCP Server နဲ့ ချိတ်ဆက်ဖို့ "Type your message here.." chat box အောက်မှာရှိတဲ့ "plug" icon ကို ရွေးချယ်ပါ -
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.my.png)
+![MCP Connect](../../../../../translated_images/my/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 အဲဒီနေရာကနေ "Connect an MCP" ကို နှိပ်ပြီး Github MCP Server နဲ့ ချိတ်ဆက်ဖို့ command ကို ထည့်သွင်းနိုင်ပါတယ် -
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-30T14:50:52+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "ko"
-}
--->
 # Github MCP 서버 예제
 
 ## 설명
@@ -53,7 +44,7 @@ chainlit run app.py -w
 
 Github MCP 서버에 연결하려면 "Type your message here.." 채팅 상자 아래에 있는 "플러그" 아이콘을 선택하세요:
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.ko.png)
+![MCP Connect](../../../../../translated_images/ko/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 그 후 "Connect an MCP"를 클릭하여 Github MCP 서버에 연결하는 명령어를 추가하세요:
 

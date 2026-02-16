@@ -1,13 +1,4 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "43069833a0412210ad5c3cc93d9c2146",
-  "translation_date": "2025-09-18T15:55:10+00:00",
-  "source_file": "07-planning-design/README.md",
-  "language_code": "uk"
-}
--->
-[![Планування шаблону дизайну](../../../translated_images/lesson-7-thumbnail.f7163ac557bea1236242cc86b178c3f1bbf5eb07b87f9cd7c256b366e32bcbb6.uk.png)](https://youtu.be/kPfJ2BrBCMY?si=9pYpPXp0sSbK91Dr)
+[![Планування шаблону дизайну](../../../translated_images/uk/lesson-7-thumbnail.f7163ac557bea123.webp)](https://youtu.be/kPfJ2BrBCMY?si=9pYpPXp0sSbK91Dr)
 
 > _(Натисніть на зображення вище, щоб переглянути відео цього уроку)_
 
@@ -32,7 +23,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ## Визначення загальної мети та розбиття завдання
 
-![Визначення цілей і завдань](../../../translated_images/defining-goals-tasks.d70439e19e37c47ac76c48b209a4eb515bea5b8a5207f6b2e7b5e597f09ccf6a.uk.png)
+![Визначення цілей і завдань](../../../translated_images/uk/defining-goals-tasks.d70439e19e37c47a.webp)
 
 Більшість завдань у реальному світі занадто складні, щоб вирішувати їх одним кроком. AI-агенту потрібна чітка мета, яка буде направляти його планування та дії. Наприклад, розглянемо мету:
 

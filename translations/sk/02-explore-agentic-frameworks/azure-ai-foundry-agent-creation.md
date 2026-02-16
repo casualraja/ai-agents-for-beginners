@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7e92870dc0843e13d4dabc620c09d2d9",
-  "translation_date": "2025-07-12T08:22:13+00:00",
-  "source_file": "02-explore-agentic-frameworks/azure-ai-foundry-agent-creation.md",
-  "language_code": "sk"
-}
--->
 # Vývoj služby Azure AI Agent
 
 V tomto cvičení použijete nástroje služby Azure AI Agent v [portáli Azure AI Foundry](https://ai.azure.com/?WT.mc_id=academic-105485-koreyst) na vytvorenie agenta pre rezerváciu letov. Agent bude schopný komunikovať s používateľmi a poskytovať informácie o letoch.
@@ -25,7 +16,7 @@ Na dokončenie tohto cvičenia potrebujete:
 1. Postupujte podľa pokynov z [blogového príspevku Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/?WT.mc_id=academic-105485-koreyst) na vytvorenie Azure AI Foundry hubu.
 2. Keď je váš projekt vytvorený, zatvorte všetky zobrazené tipy a prezrite si stránku projektu v portáli Azure AI Foundry, ktorá by mala vyzerať podobne ako na nasledujúcom obrázku:
 
-    ![Azure AI Foundry Project](../../../translated_images/azure-ai-foundry.88d0c35298348c2fca620668d9b567b50b18dfe94fd2251e0793a28d4d60854e.sk.png)
+    ![Azure AI Foundry Project](../../../translated_images/sk/azure-ai-foundry.88d0c35298348c2f.webp)
 
 ## Nasadenie modelu
 
@@ -35,7 +26,7 @@ Na dokončenie tohto cvičenia potrebujete:
 
     > **Note**: Zníženie TPM pomáha predísť nadmernému využívaniu kvóty dostupnej vo vašom predplatnom.
 
-    ![Model Deployed](../../../translated_images/model-deployment.3749c53fb81e18fdc2da5beb872441b4a5f86a2d1206c5a9999a4997f78e4b7a.sk.png)
+    ![Model Deployed](../../../translated_images/sk/model-deployment.3749c53fb81e18fd.webp)
 
 ## Vytvorenie agenta
 
@@ -77,7 +68,7 @@ Keď máte model nasadený, môžete vytvoriť agenta. Agent je konverzačný AI
     
 > Okrem toho môžete pridať **Knowledge Base** a **Actions** na rozšírenie schopností agenta poskytovať viac informácií a vykonávať automatizované úlohy na základe požiadaviek používateľa. Pre toto cvičenie môžete tieto kroky preskočiť.
     
-![Agent Setup](../../../translated_images/agent-setup.9bbb8755bf5df672c712a9aaed6482305d32a4986742e6b21faf59485f25c50a.sk.png)
+![Agent Setup](../../../translated_images/sk/agent-setup.9bbb8755bf5df672.webp)
 
 3. Ak chcete vytvoriť nového multi-AI agenta, jednoducho kliknite na **New Agent**. Novovytvorený agent sa potom zobrazí na stránke Agents.
 
@@ -90,7 +81,7 @@ Po vytvorení agenta ho môžete otestovať, aby ste videli, ako reaguje na pou�
 
     > **Note**: Agent nemusí poskytovať presné odpovede, pretože v tomto cvičení sa nepoužívajú žiadne aktuálne dáta. Cieľom je otestovať schopnosť agenta porozumieť a reagovať na používateľské otázky na základe poskytnutých inštrukcií.
 
-    ![Agent Playground](../../../translated_images/agent-playground.dc146586de71501011798b919ae595f4d4facf8c3a5f53e0107e7b80fc2418d1.sk.png)
+    ![Agent Playground](../../../translated_images/sk/agent-playground.dc146586de715010.webp)
 
 3. Po otestovaní agenta ho môžete ďalej prispôsobiť pridaním ďalších zámerov, tréningových dát a akcií na rozšírenie jeho schopností.
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9bf0395cbc541ce8db2a9699c8678dfc",
-  "translation_date": "2025-08-29T18:34:02+00:00",
-  "source_file": "11-agentic-protocols/code_samples/github-mcp/README.md",
-  "language_code": "ms"
-}
--->
 # Contoh Pelayan MCP Github
 
 ## Penerangan
@@ -53,7 +44,7 @@ Ini akan memulakan pelayan Chainlit anda pada `localhost:8000` serta mengisi Ind
 
 Untuk menyambung ke Pelayan MCP Github, pilih ikon "plug" di bawah kotak sembang "Type your message here..":
 
-![MCP Connect](../../../../../translated_images/mcp-chainlit-1.7ed66d648e3cfb28f1ea5f320b91e4404df4a24a0f236ce3de999666621f1cfc.ms.png)
+![MCP Connect](../../../../../translated_images/ms/mcp-chainlit-1.7ed66d648e3cfb28.webp)
 
 Dari situ, anda boleh klik pada "Connect an MCP" untuk menambah arahan bagi menyambung ke Pelayan MCP Github:
 
